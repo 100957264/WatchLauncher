@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_digital_clock"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_wallpaper"
+    tools:context="com.android.fisewatchlauncher2.FiseLauncherActivity" >
+
+    <!-- android:orientation="vertical" -->
+     <!--<com.android.fisewatchlauncher2.FiseDigitalClock
+       android:id="@+id/fise_digital_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:background="@null"/>-->
+          <TextClock
+           android:id="@+id/fise_text_clock"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_marginTop="36dp"
+           android:layout_marginLeft="12dp"
+           android:textSize="36sp"
+        />
+       <TextClock
+           android:id="@+id/fise_text_clock_1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="12dp"
+           android:layout_below="@+id/fise_text_clock"
+           android:textSize="18sp"
+        />
+            <TextClock
+           android:id="@+id/fise_text_clock_2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" 
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="12dp"
+           android:layout_below="@+id/fise_text_clock_1"
+           android:textSize="18sp"
+        />
+  
+</RelativeLayout>

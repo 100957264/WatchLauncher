@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FiseAssitant</string>
+    <string name="reboot">Reboot</string>
+    <string name="shutdown">Shutdown</string>
+    <string name="listen">Listen</string>
+    <string name="install_app">Install App Silently</string>
+	<string name="fise_date">06-22</string>
+    <string name="fise_week">Friday</string>
+    <string name="fise_time">09:31</string>
+</resources>

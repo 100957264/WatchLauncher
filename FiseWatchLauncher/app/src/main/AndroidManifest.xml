@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.fisewatchlauncher"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_fise_launcher"
+        android:label="@string/app_name"
+       >
+        <activity
+            android:name=".FiseLauncherActivity"
+            
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+               
+            </intent-filter>
+        </activity>
+         <activity
+            android:name=".FiseAnalogClockSelect"
+            android:label="@string/style_select" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FiseAppsListActivity"
+            android:label="@string/all_apps" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FiseDialerTestActivity"
+            android:label="@string/fise_dial" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FiseSocketTestActivity"
+            android:label="@string/fise_dial" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+           <activity
+            android:name=".FiseKeyguardActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+              <action android:name="android.intent.action.MAIN" />
+                  <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER" />  
+            </intent-filter>
+        </activity>
+         <service android:name=".FiseService">  
+            <intent-filter>  
+                <action android:name="com.android.fisewatchlauncher.FiseService"/>  
+            </intent-filter>              
+</service>
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fise_fise_dial_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.fisewatchlauncher2.FiseLauncherActivity" >
+
+    <Button
+        android:id="@+id/app_fise_dial"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/icon_fise_dial" >
+    </Button>
+
+    <TextView
+        android:id="@+id/ic_tv_dial_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_fise_dial"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_dialer"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

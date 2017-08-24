@@ -1,0 +1,748 @@
+[
+    {
+        "outputFile": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rCN\\values-zh-rCN.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 95,
+                    "endOffset": 146
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 95,
+                        "endOffset": 146
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 151,
+                    "endColumn": 106,
+                    "endOffset": 253
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 106,
+                        "endOffset": 253
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 258,
+                    "endColumn": 122,
+                    "endOffset": 376
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 258,
+                        "endColumn": 122,
+                        "endOffset": 376
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 381,
+                    "endColumn": 94,
+                    "endOffset": 471
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 381,
+                        "endColumn": 94,
+                        "endOffset": 471
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 476,
+                    "endColumn": 99,
+                    "endOffset": 571
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 476,
+                        "endColumn": 99,
+                        "endOffset": 571
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 576,
+                    "endColumn": 81,
+                    "endOffset": 653
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 576,
+                        "endColumn": 81,
+                        "endOffset": 653
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 658,
+                    "endColumn": 96,
+                    "endOffset": 750
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 658,
+                        "endColumn": 96,
+                        "endOffset": 750
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 755,
+                    "endColumn": 105,
+                    "endOffset": 856
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 755,
+                        "endColumn": 105,
+                        "endOffset": 856
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 861,
+                    "endColumn": 75,
+                    "endOffset": 932
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 861,
+                        "endColumn": 75,
+                        "endOffset": 932
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 937,
+                    "endColumn": 75,
+                    "endOffset": 1008
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 937,
+                        "endColumn": 75,
+                        "endOffset": 1008
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1013,
+                    "endColumn": 77,
+                    "endOffset": 1086
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1013,
+                        "endColumn": 77,
+                        "endOffset": 1086
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1091,
+                    "endColumn": 95,
+                    "endOffset": 1182
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1091,
+                        "endColumn": 95,
+                        "endOffset": 1182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1187,
+                    "endColumn": 95,
+                    "endOffset": 1278
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1187,
+                        "endColumn": 95,
+                        "endOffset": 1278
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1283,
+                    "endColumn": 94,
+                    "endOffset": 1373
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1283,
+                        "endColumn": 94,
+                        "endOffset": 1373
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1378,
+                    "endColumn": 96,
+                    "endOffset": 1470
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 1378,
+                        "endColumn": 96,
+                        "endOffset": 1470
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1475,
+                    "endColumn": 94,
+                    "endOffset": 1565
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 1475,
+                        "endColumn": 94,
+                        "endOffset": 1565
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1570,
+                    "endColumn": 97,
+                    "endOffset": 1663
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1570,
+                        "endColumn": 97,
+                        "endOffset": 1663
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1668,
+                    "endColumn": 111,
+                    "endOffset": 1775
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 1668,
+                        "endColumn": 111,
+                        "endOffset": 1775
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1780,
+                    "endColumn": 93,
+                    "endOffset": 1869
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 1780,
+                        "endColumn": 93,
+                        "endOffset": 1869
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1874,
+                    "endColumn": 41,
+                    "endOffset": 1911
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 795,
+                        "endColumn": 41,
+                        "endOffset": 832
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1916,
+                    "endColumn": 41,
+                    "endOffset": 1953
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 143,
+                        "endColumn": 41,
+                        "endOffset": 180
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1958,
+                    "endColumn": 58,
+                    "endOffset": 2012
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 687,
+                        "endColumn": 58,
+                        "endOffset": 741
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2017,
+                    "endColumn": 43,
+                    "endOffset": 2056
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 270,
+                        "endColumn": 43,
+                        "endOffset": 309
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2061,
+                    "endColumn": 41,
+                    "endOffset": 2098
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 228,
+                        "endColumn": 41,
+                        "endOffset": 265
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2103,
+                    "endColumn": 49,
+                    "endOffset": 2148
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 353,
+                        "endColumn": 49,
+                        "endOffset": 398
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2153,
+                    "endColumn": 42,
+                    "endOffset": 2191
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 185,
+                        "endColumn": 42,
+                        "endOffset": 223
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2196,
+                    "endColumn": 38,
+                    "endOffset": 2230
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 314,
+                        "endColumn": 38,
+                        "endOffset": 348
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2235,
+                    "endColumn": 42,
+                    "endOffset": 2273
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 42,
+                        "endOffset": 94
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2278,
+                    "endColumn": 37,
+                    "endOffset": 2311
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 403,
+                        "endColumn": 37,
+                        "endOffset": 436
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 2316,
+                    "endColumn": 43,
+                    "endOffset": 2355
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 99,
+                        "endColumn": 43,
+                        "endOffset": 138
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2360,
+                    "endColumn": 48,
+                    "endOffset": 2404
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 526,
+                        "endColumn": 48,
+                        "endOffset": 570
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 2409,
+                    "endColumn": 42,
+                    "endOffset": 2447
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 441,
+                        "endColumn": 42,
+                        "endOffset": 479
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 2452,
+                    "endColumn": 41,
+                    "endOffset": 2489
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 484,
+                        "endColumn": 41,
+                        "endOffset": 521
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 2494,
+                    "endColumn": 54,
+                    "endOffset": 2544
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 575,
+                        "endColumn": 54,
+                        "endOffset": 625
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 2549,
+                    "endColumn": 42,
+                    "endOffset": 2587
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 837,
+                        "endColumn": 42,
+                        "endOffset": 875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 2592,
+                    "endColumn": 56,
+                    "endOffset": 2644
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 630,
+                        "endColumn": 56,
+                        "endOffset": 682
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2649,
+                    "endColumn": 77,
+                    "endOffset": 2722
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 1874,
+                        "endColumn": 77,
+                        "endOffset": 1947
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 2727,
+                    "endColumn": 100,
+                    "endOffset": 2823
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\values-zh-rCN\\values-zh-rCN.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 1952,
+                        "endColumn": 100,
+                        "endOffset": 2048
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2828,
+                    "endColumn": 47,
+                    "endOffset": 2871
+                },
+                "from": {
+                    "file": "D:\\workspaces\\FiseWatchLauncher\\app\\src\\main\\res\\values-zh-rCN\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 5,
+                        "startOffset": 747,
+                        "endColumn": 48,
+                        "endOffset": 790
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FiseLauncher</string>
+    <string name="app_settings">Settings</string>
+    <string name="app_camera">Camera</string>
+    <string name="app_gallery">Gallery</string>
+    <string name="app_dialer">Dialer</string>
+    <string name="app_contact">Contacts</string>
+    <string name="app_mms">Mms</string>
+    <string name="app_file_manager">File Manager</string>
+    <string name="app_qq">QQ</string>
+    <string name="app_video">Video Call</string>
+    <string name="app_wechat">WeChat</string>
+    <string name="app_stepcounter">Scaning To Bind</string>
+    <string name="camera_can_not_found">Camera is not avalilable</string>
+    <string name="qq_can_not_be_found">You have not install QQ yet</string>
+    <string name="app_can_not_be_found">You have not install this application</string>
+    <string name="style_select">Select the Style of Analog Clock</string>
+    <string name="all_apps">All Apps</string>
+    <string name="fise_dial">Fise Dialer</string>
+</resources>

@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fise_keyguard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.fisewatchlauncher.FiseKeyguardActivity" >
+
+    <!-- android:orientation="vertical" -->
+ 
+        <com.android.fisewatchlauncher.FiseRectAnalogClockZero
+        android:id="@+id/analog_clock_0000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@null" /> 
+         <com.android.fisewatchlauncher.FiseRectAnalogClockOne
+        android:id="@+id/analog_clock_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@null" /> 
+        
+        <com.android.fisewatchlauncher.FiseRectAnalogClockTwo
+        android:id="@+id/analog_clock_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@null" /> 
+        <com.android.fisewatchlauncher.FiseRectAnalogClockThree
+        android:id="@+id/analog_clock_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:background="@null" />    
+       <com.android.fisewatchlauncher.FiseRectAnalogClockFive
+        android:id="@+id/analog_clock_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@null" />   
+        <com.android.fisewatchlauncher.FiseRectAnalogClockSix
+        android:id="@+id/analog_clock_6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:background="@null" /> 
+  
+</RelativeLayout>

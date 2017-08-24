@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">沸石启动器</string>
+    <string name="app_settings">设置</string>
+    <string name="app_camera">相机</string>
+    <string name="app_gallery">图库</string>
+    <string name="app_dialer">拨号</string>
+    <string name="app_contact">联系人</string>
+    <string name="app_mms">短信</string>
+    <string name="app_file_manager">文件管理</string>
+    <string name="app_qq">QQ</string>
+    <string name="app_video">视频通话</string>
+    <string name="app_wechat">微信</string>
+    <string name="app_stepcounter">扫描绑定</string>
+    <string name="camera_can_not_found">相机不可用</string>
+    <string name="qq_can_not_be_found">你还没有安装QQ</string>
+    <string name="app_can_not_be_found">你还没有安装该应用</string>
+     <string name="style_select">选择表盘样式</string>
+    <string name="all_apps">所有应用</string>
+    <string name="fise_dial">沸石拨号</string>
+</resources>

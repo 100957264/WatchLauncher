@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.fisewatchlauncher2.FiseSocketTestActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ip_edt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="ip"
+            android:text="172.16.1.200"/>
+        <EditText
+            android:id="@+id/port_edt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="port"
+            android:text="2000"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start"/>
+    <EditText
+        android:id="@+id/socket_id_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="socketID"/>
+
+
+
+    <EditText
+        android:id="@+id/msg_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:hint="content"
+        android:gravity="top"
+        />
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send"/>
+    <TextView
+        android:id="@+id/console_txt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/clear_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="clear"/>
+
+
+
+</LinearLayout>
