@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FiseAgeingTest</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="test_lcd">LCD</string>
+    <string name="test_vib">Vibrate</string>
+    <string name="test_camera">Camera</string>
+    <string name="test_speaker">Speaker</string>
+    <string name="take_picture">Capture</string>
+    <string name="stop_capture">Back</string>
+</resources>

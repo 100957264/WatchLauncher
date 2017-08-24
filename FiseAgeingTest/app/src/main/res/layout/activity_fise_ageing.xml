@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fise_ageing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    tools:context="ageing.fise.com.fiseageingtest.FiseAgeingActivity">
+    <LinearLayout
+        android:id="@+id/test_operation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_default"
+            android:layout_weight="0.5"
+            android:text="@string/start" />
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_default"
+            android:text="@string/stop" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/test_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/test_speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@drawable/btn_default"
+            android:text="@string/test_speaker" />
+        <Button
+            android:id="@+id/test_vibrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@drawable/btn_default"
+            android:text="@string/test_vib" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/test_group_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/test_lcd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_default"
+            android:layout_weight="0.25"
+            android:text="@string/test_lcd" />
+
+        <Button
+            android:id="@+id/test_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:background="@drawable/btn_default"
+            android:text="@string/test_camera" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lcd_show"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.7"
+        android:background="#FFFF0000"
+        android:visibility="gone"/>
+    <!--<LinearLayout
+        android:id="@+id/take_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/take_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_default"
+            android:text="@string/take_picture" />
+        <Button
+            android:id="@+id/stop_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_default"
+            android:layout_weight="0.5"
+            android:text="@string/stop_capture" />
+
+    </LinearLayout>-->
+
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="0.7"
+        android:visibility="gone"/>
+
+</LinearLayout>
