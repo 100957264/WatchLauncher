@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FiseAssitant</string>
+	<string name="reboot">Reboot</string>
+	<string name="shutdown">Shutdown</string>
+    <string name="listen">Listen</string>
+    <string name="install_app">Install App Silently</string>
+	<string name="start_service">Start Service</string>
+	<string name="silent_mode">Silent Mode</string>
+	<string name="normal_mode">Normal Mode</string>
+	<string name="vibrate_mode">Vibrate Mode</string>
+	<string name="screen_timeout">Screen_timeout</string>
+	<string name="love_alert">Love Alert</string>
+	<string name="forbid_mode">Forbid Mode</string>
+	<string name="forbid_disable">Forbid Disable</string>
+</resources>

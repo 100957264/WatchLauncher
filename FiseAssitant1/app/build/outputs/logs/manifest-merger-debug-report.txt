@@ -1,0 +1,130 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:2:1-65:12
+	package
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:4:5-44
+		INJECTED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml
+	android:sharedUserId
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:5:5-46
+	coreApp
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:3:5-19
+	xmlns:android
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.SHUTDOWN
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:7:22-64
+uses-permission#android.permission.REBOOT
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:8:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:9:5-66
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:9:22-63
+uses-sdk
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:11:5-44
+	android:targetSdkVersion
+		INJECTED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:11:15-41
+		INJECTED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:13:5-73
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:13:22-70
+uses-permission#android.permission.READ_SETTINGS
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:14:5-72
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:14:22-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:15:22-65
+application
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:17:5-63:19
+	android:label
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:20:9-41
+	android:supportsRtl
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:21:9-35
+	android:allowBackup
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:18:9-35
+	android:icon
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:19:9-45
+activity#android.fise.com.fiseassitant.ShutdownRebootHelperActivity
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:22:9-29:20
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:22:19-63
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT+android.intent.category.LAUNCHER
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:23:13-28:29
+action#android.intent.action.MAIN
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:26:17-76
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:26:27-73
+category#android.intent.category.LAUNCHER
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:27:27-74
+service#android.fise.com.fiseassitant.FiseShutdownService
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:30:9-37:19
+	android:exported
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:33:13-36
+	android:directBootAware
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:32:13-43
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:31:13-48
+intent-filter#android.fise.com.fiseassitant.FiseShutdownService
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:34:13-36:29
+action#android.fise.com.fiseassitant.FiseShutdownService
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:35:17-92
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:35:25-89
+receiver#android.fise.com.fiseassitant.AlertReceiver
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:38:9-44:20
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:38:19-48
+intent-filter#com.fise.xiaoyu.ACTION_LOVE_ALERT+com.fise.xiaoyu.EVENT_ACTION_FORBID_DISABLE+com.fise.xiaoyu.EVENT_ACTION_FORBID_EBALE
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:39:13-43:29
+	android:priority
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:39:28-51
+action#com.fise.xiaoyu.ACTION_LOVE_ALERT
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:40:17-76
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:40:25-73
+action#com.fise.xiaoyu.EVENT_ACTION_FORBID_EBALE
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:41:17-84
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:41:25-81
+action#com.fise.xiaoyu.EVENT_ACTION_FORBID_DISABLE
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:42:17-86
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:42:25-83
+activity#net.wecare.watchlauncher.aty.MainAty
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:46:9-49:51
+	android:launchMode
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:49:13-48
+	android:configChanges
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:48:13-59
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:47:13-64
+activity#net.wecare.watchlauncher.aty.MainFragmentAty
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:50:9-61:20
+	android:launchMode
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:53:13-48
+	android:configChanges
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:52:13-59
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:51:13-72
+intent-filter#android.intent.action.MAIN+android.intent.category.DEFAULT+android.intent.category.HOME+android.intent.category.LAUNCHER
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:54:13-60:29
+category#android.intent.category.HOME
+ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:58:17-73
+	android:name
+		ADDED from D:\workspace\code\FiseAssitant1\app\src\main\AndroidManifest.xml:58:27-70

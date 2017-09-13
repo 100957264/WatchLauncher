@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    coreApp="true"
+    package="android.fise.com.fiseassitant"
+    android:sharedUserId="android.uid.system" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.SHUTDOWN" />
+    <uses-permission android:name="android.permission.REBOOT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true" >
+        <activity android:name="android.fise.com.fiseassitant.ShutdownRebootHelperActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="android.fise.com.fiseassitant.FiseShutdownService"
+            android:directBootAware="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.fise.com.fiseassitant.FiseShutdownService" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="android.fise.com.fiseassitant.AlertReceiver" >
+            <intent-filter android:priority="1000" >
+                <action android:name="com.fise.xiaoyu.ACTION_LOVE_ALERT" />
+                <action android:name="com.fise.xiaoyu.EVENT_ACTION_FORBID_EBALE" />
+                <action android:name="com.fise.xiaoyu.EVENT_ACTION_FORBID_DISABLE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.wecare.watchlauncher.aty.MainAty"
+            android:configChanges="mcc|mnc|keyboardHidden"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name="net.wecare.watchlauncher.aty.MainFragmentAty"
+            android:configChanges="mcc|mnc|keyboardHidden"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

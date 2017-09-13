@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="app_name">FiseAssitant</string>
+    <string name="forbid_disable">Forbid Disable</string>
+    <string name="forbid_mode">Forbid Mode</string>
+    <string name="install_app">Install App Silently</string>
+    <string name="listen">Listen</string>
+    <string name="love_alert">Love Alert</string>
+    <string name="normal_mode">Normal Mode</string>
+    <string name="reboot">Reboot</string>
+    <string name="screen_timeout">Screen_timeout</string>
+    <string name="shutdown">Shutdown</string>
+    <string name="silent_mode">Silent Mode</string>
+    <string name="start_service">Start Service</string>
+    <string name="vibrate_mode">Vibrate Mode</string>
+    <style name="TransparentWindowBg">
+    <item name="android:windowBackground">@android:color/transparent</item>
+</style>
+</resources>
