@@ -1,0 +1,183 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'//添加greenDao的插件
+
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd')
+    return formattedDate
+}
+
+File signPropertiesFile = rootProject.file('sign/signing.properties')
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    greendao {//添加GreenDao的生成路径
+        schemaVersion 1
+        targetGenDir 'src/main/java'
+        daoPackage 'com.fise.marechat.dao'
+    }
+
+    defaultConfig {
+        applicationId "com.fise.marechat"
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    if (signPropertiesFile.exists()) {
+        Properties properties = new Properties()
+        properties.load(new FileInputStream(signPropertiesFile))
+        signingConfigs {
+            release {
+                storeFile rootProject.file(properties['STORE_FILE'])
+                storePassword properties['STORE_PASSWORD']
+                keyAlias properties['KEY_ALIAS']
+                keyPassword properties['KEY_PASSWORD']
+            }
+
+            debug {
+                storeFile rootProject.file(properties['STORE_FILE'])
+                storePassword properties['STORE_PASSWORD']
+                keyAlias properties['KEY_ALIAS']
+                keyPassword properties['KEY_PASSWORD']
+            }
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            buildConfigField("boolean", "LOG_DEBUG", "true")
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            buildConfigField("boolean", "LOG_DEBUG", "false")
+            minifyEnabled true
+            //zipAlignEnabled true
+            // shrinkResources true
+            signingConfig signingConfigs.release
+            proguardFiles 'proguard.cfg'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    productFlavors {
+        dev {
+            buildConfigField "String", "CID", "\"11011_1001_00\""
+        }
+        beta {
+            buildConfigField "String", "CID", "\"11011_1006_00\""
+        }
+    }
+
+    //打包-防渠道代码重复处理
+//    productFlavors.all { flavor ->
+//        flavor.manifestPlaceholders = [ UMENG_CHANNEL_VALUE:name ]
+//    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            def projectName = 'AntiDropping';
+            if (variant.buildType.name.equals('release')) {
+                def releaseApkName = projectName + defaultConfig.versionName +
+                        '_' + variant.productFlavors[0].name + "_" + getDate() + '.apk'
+                output.outputFile = new File(oldFile.parent, releaseApkName)
+            }
+            if (variant.buildType.name.equals('beta')) {
+                def debugApkName = projectName + defaultConfig.versionName +
+                        '_' + variant.productFlavors[0].name + 'beta' + '.apk'
+                output.outputFile = new File(oldFile.parent, debugApkName)
+            }
+            if (variant.buildType.name.equals('debug')) {
+                def debugApkName = projectName + defaultConfig.versionName +
+                        '_' + variant.productFlavors[0].name + '_debug' + '.apk'
+                output.outputFile = new File(oldFile.parent, debugApkName)
+            }
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
+//    testCompile 'junit:junit:4.12'
+
+    compile files('libs/BaiduLBS_Android.jar')
+    compile project(":photopicker")
+
+    compile rootProject.ext.dependencies["constraint-layout"]
+    compile rootProject.ext.dependencies["support-v4"]
+    compile rootProject.ext.dependencies["support-v7"]
+    compile rootProject.ext.dependencies["support-design"]
+    compile rootProject.ext.dependencies["cardview-v7"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["gridlayout-v7"]
+    compile rootProject.ext.dependencies["support-percent"]
+    compile rootProject.ext.dependencies["support-multidex"]
+    compile rootProject.ext.dependencies["eventbus"]
+    compile rootProject.ext.dependencies["butterknife"]
+    compile rootProject.ext.dependencies["glide"]
+    compile rootProject.ext.dependencies["nineoldandroids"]
+    compile rootProject.ext.dependencies["umengAnalytics"]
+    compile rootProject.ext.dependencies["leakCanary"]
+    compile rootProject.ext.dependencies["rxjava"]
+    compile rootProject.ext.dependencies["rxandroid"]
+//    compile rootProject.ext.dependencies["okhttp-integration"]
+    compile rootProject.ext.dependencies["okhttp"]
+    compile rootProject.ext.dependencies["logging-interceptor"]
+    compile rootProject.ext.dependencies["gson"]
+    compile (rootProject.ext.dependencies["retrofit"]){
+        exclude module: 'okhttp'
+    }
+    compile rootProject.ext.dependencies["converter-gson"]
+    compile rootProject.ext.dependencies["adapter-rxjava"]
+
+    compile rootProject.ext.dependencies["rxbinding"]
+    compile rootProject.ext.dependencies["rxpermissions"]
+    compile rootProject.ext.dependencies["gialogUtils"]
+    compile rootProject.ext.dependencies["greendao"]
+
+    compile ("com.zhy:flowlayout-lib:1.0.3"){
+        exclude group: 'com.android.support' //exclude 可以解决 lib冲突的问题
+    }
+
+    compile ("com.github.adrielcafe:AndroidAudioRecorder:0.3.0"){
+        exclude group: 'com.android.support'
+    }
+
+
+}

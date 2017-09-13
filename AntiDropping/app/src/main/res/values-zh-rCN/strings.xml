@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">魔聊</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="default_send_text">请输入要发送的信息</string>
+    <string name="network_disavilable_text">网络连接异常</string>
+
+</resources>
