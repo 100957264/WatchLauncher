@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/pull_to_refresh_indicator1" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator2" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator3" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator4" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator5" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator6" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator7" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator8" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator9" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator10" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator11" android:duration="200"/>
+    <item android:drawable="@drawable/pull_to_refresh_indicator12" android:duration="200"/>
+</animation-list>

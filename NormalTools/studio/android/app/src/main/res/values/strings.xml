@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_version">xiaoyu_android_1.076_20170909</string>
+    <string name="bus_stop">(公交站)</string>
+    <string name="switch_voice">切换语音聊天</string>
+    <string name="being_invited"> 正在等待对方接受邀请..</string>
+    <string name="processing_invitation"> 邀请你进行视频聊天..</string>
+    <string name="switch_camera">转换摄像头</string>
+
+    <!-- 消息页面复制 -->
+    <string name="call_mode">听筒模式</string>
+    <string name="speaker_mode">扬声器模式</string>
+    <string name="copy">复制</string>
+    <string name="resend">重发</string>
+    <string name="transpond">转发</string>
+    <string name="send_message">发表</string>
+    <string name="title_activity_pick_photo">PickPhotoActivity</string>
+    <string name="send">发送</string>
+    <string name="preview">预览</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="auth_select">授权</string>
+    <string name="exit">退出</string>
+    <string name="thumb_remove">清理图片缓存</string>
+    <string name="notify_setting">通知设置</string>
+    <string name="thumb_remove_finish">清理完成</string>
+    <string name="title_activity_preview">PreviewActivity</string>
+    <string name="request_login_faild">请求登录消息服务器失败</string>
+    <string name="sdcard_unavaluable">请检查存储卡是否可用</string>
+    <string name="image_path_unavaluable">图片路径无效</string>
+    <string name="disconnected">连接已断开</string>
+    <string name="requesting">正在获取信息...</string>
+    <string name="connecting">正在连接...</string>
+    <string name="chat">发信息</string>
+    <string name="contact_all">全部</string>
+    <string name="contact_department">部门</string>
+    <string name="top_left_back">小雨</string>
+    <string name="group_name_add">加入群聊</string>
+    <string name="group_name_tip">群聊名称</string>
+    <string name="check_group_user">查看全部群成员</string>
+
+    <string name="group_name_nick">群聊昵称</string>
+    <string name="group_name_qr">群二维码</string>
+    <string name="group_name_notice">群公告</string>
+    <string name="group_name_notice_title">只有群主可以编辑</string>
+    <string name="group_name_show_nick">我在本群中的昵称</string>
+    <string name="chat_failed_search">未搜索到匹配的结果</string>
+    <string name="save">保存</string>
+    <string name="save_photo">保存图片</string>
+    <string name="chat_detail">聊天详情</string>
+    <string name="contacts">联系人</string>
+    <string name="choose_contact">选择联系人</string>
+    <string name="switch_login_server">忘记密码?</string>
+    <string name="switch_register_server">快速注册</string>
+    <string name="switch_login_server_title">输入登录服务器地址</string>
+    <string name="show_app_name">小雨</string>
+    <string name="notify_tuku">图库</string>
+    <string name="select_group">选择一个群</string>
+    <string name="select_user">选择联系人</string>
+    <string name="search_text">搜索</string>
+    <string name="vip_xiaowei_string">小雨专区</string>
+    <string name="thumb_file_manger">文件管理</string>
+    <string name="vip_manger_string">会员专区</string>
+    <string name="help_manger_string">帮助与反馈</string>
+    <string name="setting_manger_string">设置</string>
+    <string name="star_req_list">新的位友</string>
+    <string name="account_security">账号与安全</string>
+    <string name="currency_text">通用</string>
+    <string name="synopsis">简介</string>
+
+    <string name="nicheng_name">名字</string>
+    <string name="beizhu_name">备注</string>
+    <string name="new_message">新消息通知</string>
+    <string name="privacy_message">隐私</string>
+    <string name="currency_string">通用</string>
+    <string name="already_protect">已保护</string>
+    <string name="un_setting">未设置</string>
+    <string name="message_notify">新消息通知</string>
+    <string name="about_xiaowei">关于小雨</string>
+    <string name="personal_head">个人头像</string>
+    <string name="email">邮箱地址</string>
+    <string name="tel_phone">手机号码</string>
+    <string name="yu_message">消息中心</string>
+    <string name="refuse_reason">拒绝理由</string>
+    <string name="select_school">选择学校</string>
+    <string name="ranking_list">排行榜</string>
+
+
+    <string name="interlocution">问答</string>
+    <string name="baofoujiao">抱佛脚</string>
+    <string name="step_counter_text">计步</string>
+    <string name="yu_friends">我的雨友</string>
+    <string name="binding_friends">绑定的雨友</string>
+    <string name="manage_yu_friends">可管理我的雨友</string>
+
+    <string name="yu_friends_group">雨友群</string>
+
+
+    <string name="new_xiaowei_name">请输入小雨号</string>
+    <string name="new_email">你的新邮箱地址</string>
+    <string name="password">小雨密码</string>
+    <string name="lock_text">已保护</string>
+    <string name="accountProtection">账号保护</string>
+    <string name="QR_code">二维码</string>
+    <string name="sex">性别</string>
+    <string name="my_app_market">我的应用</string>
+
+    <string name="dev_bell_mode">铃声模式</string>
+    <string name="locality">地区</string>
+    <string name="signature">个性签名</string>
+    <string name="no_wei_string">你没有位群,请添加位群</string>
+    <string name="security">小雨安全中心</string>
+    <string name="security_prompt">如果遇到账号信息泄露,忘记密码,诈骗等账号安全问题,可前往小雨安全中心</string>
+    <string name="help_1_string">你未发现小雨功能</string>
+    <string name="help_2_string">允许查看我的位置说明</string>
+    <string name="help_3_string">小视频自动循环播放会产品额外流量吗</string>
+    <string name="regist_name">注册</string>
+    <string name="regist_black">返回</string>
+    <string name="my_information">我的</string>
+    <string name="regist_code_text">(30s)重新发送</string>
+    <string name="regist_code_update">获取动态验证码</string>
+    <string name="add_phone">新增</string>
+    <string name="show_regist_name">你的登录账户为: xxxxxxx, 请输入密码</string> 
+    <string name="search_hint">位友,设备信息查询</string>
+    <string name="setting_label">设置备注</string>
+    <string name="setting_phone_name">电话号码</string>
+    <string name="yuyou_setting">雨友管理设置</string>
+
+
+    <string name="setting_position">位置信息</string>
+    <string name="last_position">(最后位置)</string>
+    <string name="locality_string">广东  深圳</string>
+    <string name="locality_show">地区</string>
+    <string name="show_more">个性签名</string>
+    <string name="chat_send">发送信息</string>
+    <string name="chat_follow">添加位友</string>
+    <string name="remove_black_list">移出黑名单</string>
+    <string name="logout">退出登录</string>
+    <string name="login">登录</string>
+    <string name="setting_phone">电话号码</string>
+    <string name="delete_friends">删除</string>
+    <string name="delete">删除</string>
+    <string name="exit_group">删除并退出</string>
+    <string name="user_info">资料设置</string>
+    <string name="add_friends">添加朋友</string>
+    <string name="add_xiaowei">小雨</string>
+    <string name="cancel_follow">取消位友</string>
+    <string name="search_phone">小雨号/手机号码</string>
+    <string name="shao_text">扫一扫</string>
+    <string name="shao_show_text">扫描二维码名片</string>
+    <string name="phone_contact">手机联系人</string>　
+    <string name="nickname_text">手机联系人</string>
+    <string name="nickname_show_text">添加或邀请通讯录中的朋友</string>
+    <string name="new_friends">新朋友</string>
+    <string name="new_wei_friends">新的位友</string>
+    <string name="wei_group">位群</string>
+    <string name="wei_friends">位友</string>
+    <string name="device">设备</string>
+    <string name="xiaowei_device">小雨</string>
+    <string name="business">企业号</string>
+    <string name="business_hao">沸石集团</string>
+    <string name="friends_gourp">好友群</string>
+    <string name="real_time_info">实时监控</string>
+    <string name="exit_group_hint">不好意思，你可能被退出群</string>
+    <string name="query_historical_track">历史轨迹</string>
+    <string name="start_title">起点:</string>
+    <string name="end_title">终点:</string>
+    <string name="xiaowei_area">小雨专区</string>
+    <string name="stat_dev">开始时间:</string>
+    <string name="end_dev">结束时间:</string>
+    <string name="agree_string">接受</string>
+    <string name="received_text">已添加</string>
+    <string name="new_friends_add">添加朋友</string>
+    <string name="search_add_friends">添加位友</string>
+    <string name="switch_login_text">登录</string>
+    <string name="submit_text">提交</string>
+    <string name="retransmission">重发</string>
+    <string name="switch_submit_text">收不到验证码?</string>
+    <string name="msg_camera_framework_bug">对不起，摄像头遇到了一个问题。您可能需要重新启动设备</string>
+    <string name="button_ok">好的</string>
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <string name="grou_list">好友群</string>
+    <string name="star_list">位友</string>
+    <string name="device_list">设备</string>
+    <string name="xiaowei_list">发现</string>
+　
+
+    <string name="agreement_show_text">用户服务协议</string>
+    <string name="group_qr">群的二维码名片</string>
+    <string name="info_qr">二维码名片</string>
+    <string name="add_device">添加设备</string>
+    <string name="no_device">咦，还没有设备！</string>
+    <string name="add_or_buy_device">请点击左上角添加设备或购买设备</string>
+    <string name="setting_dev_phone">设置号码</string>
+    <string name="confirm_text">确定</string>
+    <string name="wei_grou_list">位群</string>
+    <string name="card_text">定位卡片机</string>
+    <string name="my_device">我的设备</string>
+    <string name="device_setting">设置</string>
+    <string name="select_gourp_list">选择群聊</string>
+    <string name="electric_vehicle">电动车</string>
+    <string name="intercom_vehicle">对讲机</string>
+    <string name="children_watch_vehicle">儿童手表</string>
+    <string name="device_classification">设备分类</string>
+    <string name="smart_camera_text">智能摄像头</string>
+    <string name="intercom_text">智能对讲机</string>
+    <string name="family">设备授权</string>
+   <string name="device_authorize">设备授权</string>
+    <string name="custody">实时监护</string>
+    <string name="gomap">进入地图</string>
+    <string name="setting_devphone">设备手机号码</string>
+    <string name="calls_inquiry">话费查询</string>
+    <string name="dev_info_height">身高</string>
+    <string name="dev_info_weight">体重</string>
+    <string name="dev_info_birthday">生日</string>
+    <string name="task_title">标题</string>
+    <string name="safety_remind">安全提醒</string>
+    <string name="charing_remind">充电提醒</string>
+    <string name="safety_low_electric_warning">低电量报警</string>
+    <string name="safety_off_line_warning">离线报警</string>
+    <string name="safety_dev_drop_warning">手表脱落报警</string>
+    <string name="safety_wear_on_warning">手表戴上报警</string>
+    <string name="safety_fence_warning">安全围栏报警</string>
+    <string name="camera_off_lint_hint_text">打开离线报警设备在关机或断网状态将会报警提示</string>
+    <string name="safety_investigation_warning">侦查报警</string>
+    <string name="safety_investigation_warning_hint">打开 侦察报警设备在监控侦察到有移动物体状态下将会报警提示</string>
+    <string name="power_supply_warning">供电报警</string>
+    <string name="power_supply_warning_hint">打开供电报警当设备在使用内置电池供电情况下将会报警提示</string>
+
+    <string name="no_safety_fence_hint1">没有安全围栏哦!</string>
+    <string name="no_safety_fence_hint2">请点击右上角选择添加设置安全围栏</string>
+
+    <string name="no_sweet_reminder_hint1">没有关爱提醒哦!</string>
+    <string name="no_sweet_reminder_hint2">请点击右上角选择添加设置关爱提醒</string>
+    <string name="no_lesson_data_hint2">请点击右上角选择添加设置上课模式</string>
+    <string name="no_attend_class_hint1">没有上课禁用哦!</string>
+    <string name="no_attend_class_hint2">请点击右上角选择添加设置上课禁用</string>
+
+    <string name="no_attend_class_hint3">上课禁用期间手表将只能看时间和使用SOS求救功能!</string>
+
+    <string name="safety_sos_warning">SOS求助报警</string>
+    <string name="safety_charge_warning">话费查询</string>
+    <string name="device_xiaowei">实时位置</string>
+    <string name="group_postion">位置信息</string>
+    <string name="sweet_remind">关爱提醒</string>
+    <string name="attend_class">上课禁用</string>
+    <string name="light_time">亮屏时间</string>
+    <string name="start">开始</string>
+    <string name="end">结束</string>
+    <string name="morning_class_time">上午上课时间</string>
+    <string name="afternoon_class_time">下午上课时间</string>
+    <string name="sweet_remind_time">提醒时间</string>
+    <string name="time_compare_result_hint">结束时间不能小于开始时间</string>
+    <string name="sweet_remind_repeat">重复</string>
+    <string name="device_task">任务</string>
+    <string name="device_task_operate_fail">网络异常，任务编辑失败</string>
+    <string name="please_slecte_complete_time">请填写完整开始结束时间</string>
+    <string name="no_authority_to_operate">非管理员无权操作</string>
+    <string name="electric_safety_warn">的电量低于20%！请及时充电或设置为省电模式！</string>
+    <string name="fencing_safety_warn">离开 </string>
+    <string name="sos_safety_warn">使用了SOS求救功能!</string>
+    <string name="dev_drop_safety_warn">手表已脱落!请联系</string>
+    <string name="dev_wear_on">手表已戴上</string>
+
+    <string name="fencing_safety_area">安全区域!</string>
+    <string name="off_line_safety_warn_one">可能由于网络异常</string>
+    <string name="off_line_safety_warn">暂时离线</string>
+    <string name="device_prompt">提示</string>
+    <string name="device_set_nick_name_prompt">昵称不能重复设置</string>
+
+    <string name="dev_phone_tishi">输入定位卡片机中设备电话号码, 才能使用回拔监听和通话功能</string>
+    <string name="add_contact_success">联系人数据添加成功</string>
+    <string name="please_check_contacts_authority">保存到电话本失败，请确认限是否打开</string>
+    <string name="normal_work_mode_explain_text">普通模式设备每10分钟定位一次,耗电量大</string>
+    <string name="save_electricity_work_mode_explain_text">省电模式设备每30分钟定位一次，耗电量一般</string>
+    <string name="sleep_work_mode_explain_text">休眠模式设备每60分钟定位一次，非常省电</string>
+    <string name="setting_phone_shuo">添加设备SIM卡号码,此号码是用于设备与管理员的通讯和数据传送!且具有唯一性!</string>
+    <string name="showdown_text">打开离线报警设备关机状态将会报警提示</string>
+    <string name="electricity_tishi_text">打开低电量报警设备低电量状态将会报警提示</string>
+    <string name="electronic_warning_text">打开安全围栏即可监控设备的安全围栏范围内的位置信息</string>
+    <string name="accountProtection_text">开启账号保护后,在其他设备上登录你的小雨,需要验证你的手机号码</string>
+    <string name="callalarm_warning_text">打开通话报警设备状态将会报警提示</string>
+    <string name="taske_off_warning_text">打开手表脱落报警当手表被取下将会报警提示</string>
+    <string name="offline_text">打开离线报警设备关机或离线状态将会报警提示</string>
+
+    <string name="family_concern_text">添加到白名单的号码才可拨打设备</string>
+    <string name="salvation_text">设备在紧急情况下重复循环拨打上述救助号码</string>
+    <string name="electronic_text">设备离开或进入已设置启用状态区域范围，均会给您发送通知</string>
+    <string name="police">报警管理</string>
+    <string name="video_replay">精彩回放</string>
+    <string name="historical">历史轨迹</string>
+    <string name="working_mode">工作模式</string>
+    <string name="emergency_call">SOS号码</string>
+    <string name="speedlimit">限速设置</string>
+    <string name="emergency_phone">SOS号码</string>
+    <string name="white_list">通话白名单</string>
+    <string name="update_tel">更换手机号码</string>
+    <string name="input_sms">填写验证码</string>
+
+    <string name="me_tel_phone">手机号</string>
+    <string name="tel_phone_prompt">已经绑定手机号，你可以通过手机号+密码登录小雨</string>
+
+    <string name="sel_identity">请选择身份</string>
+    <string name="input_identity">请输入昵称</string>
+    <string name="input_manual_operation">手动输入</string>
+    <string name="input_custom">自定义输入</string>
+    <string name="go_contact_list">通讯录选择</string>
+    <string name="please_input_phone_number">请输入电话号码</string>
+    <string name="exit_group_hint_word">删除并退出后，将不再接收此群聊信息</string>
+    <string name="white_phone_number_add">新增白名单</string>
+    <string name="sos_phone_number_add">新增SOS号码</string>
+    <string name="sel_white_phone">选择号码</string>
+    <string name="father">爸爸</string>
+    <string name="mather">妈妈</string>
+    <string name="grandpa">爷爷</string>
+    <string name="grandma">奶奶</string>
+    <string name="grandfather">外公</string>
+    <string name="grandmamather">外婆</string>
+    <string name="monday">每周一</string>
+    <string name="tuesday">每周二</string>
+    <string name="wednesdays">每周三</string>
+    <string name="thursday">每周四</string>
+    <string name="friday">每周五</string>
+    <string name="saturday">每周六</string>
+    <string name="sunday">每周日</string>
+
+    <string name="go_my_list">进入设备历史纪录</string>
+    <string name="device_message_record">消息记录</string>
+    <string name="conversation">通话</string>
+    <string name="silent_listening">静默监听</string>
+    <string name="electricity_warning">低电量报警</string>
+    <string name="shutdown_warning">离线报警</string>
+    <string name="electronic_warning">安全围栏</string>
+    <string name="bell_mode">响铃模式</string>
+    <string name="mute_mode">静音模式</string>
+    <string name="call_alarm">通话报警</string>
+    <string name="taske_off_alarm">手表脱落报警</string>
+    <string name="offline_warning">离线报警</string>
+
+    <string name="step_counter">计步开关</string>
+    <string name="firmware_upgrade">固件升级</string>
+    <string name="shown_down">远程关机</string>
+
+    <string name="set_success">设置成功</string>
+    <string name="signal_text">信号</string>
+    <string name="electricity_text">电量</string>
+    <string name="position_text">位置</string>
+    <string name="no_wei">如果没有小雨终端设备, 请点击</string>
+    <string name="wei_device">“小雨专区”</string>
+    <string name="pass_modify">为了保障你的数据安全,请输入原密码</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="prompt_text">你需要发送验证申请, 等对方通过</string>
+    <string name="regist_phone_title">填手机号</string>
+    <string name="regist_password_title">设置密码</string>
+    <string name="regist_sms_title">验证码</string>
+    <string name="sms_confirm_pass_code">短信验证</string>
+    <string name="huafei"> 设备将给运营商发送短信查询话费,你将会在联系设备看到话费信息(因网络原因,短信可能会有延迟:部分虚拟运营商可能不支持短信查询话费) 。查询短信内容</string>
+    
+    
+     <string name="start_live">推流</string>
+    <string name="watch_live">拉流</string>
+    <string name="str_rtmp">RTMP</string>
+
+    <string name="hint_rtmp_url">输入推流/拉流地址</string>
+    <string name="str_rtmp_success">RTMP 连接成功</string>
+    <string name="str_rtmp_failed">RTMP 连接失败</string>
+    <string name="str_rtmp_status">RTMP 延迟：%1$d 网络：%2$d</string>
+    <string name="str_rtmp_reconnecting">RTMP 重连中(%1$d秒)...</string>
+    <string name="str_rtmp_play_success">RTMP 播放成功</string>
+    <string name="str_rtmp_pull_status">RTMP 缓存区：%1$d 码率：%2$d</string>
+    <string name="version">V0.0.1</string>
+
+    <string name="setp_counter_text">运动</string>
+    <string name="setp_counter_record">运动记录</string>
+    <string name="setp_record_text">今日里程</string>
+    <string name="setp_number_text">今日步数</string>
+    <string name="setp_calorie_text">今日消耗卡路里</string>
+
+
+    <string name="kilometre">公里</string>
+    <string name="setp_number">步</string>
+    <string name="calorie">千卡</string>
+
+    <string name="str_rtmp_company">Powered by Boyuan (Shanghai) Information Technology Co., Ltd.</string>
+
+    <string name="birthday_cancle">取消</string>
+    <string name="birthday_title">请选择时间</string>
+    <string name="birthday_commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+
+    <string name="select_date">选择日期</string>
+    <string name="current_date">当前日期</string>
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+
+    <string name="replay_camera_net_video">回放摄像头端视频</string>
+    <string name="replay_camera_local_video">回放本地视频</string>
+    <string name="check_more_video">查看更多</string>
+
+    <string name="no_permission">无%1$s权限，无法使用该功能</string>
+
+
+</resources>

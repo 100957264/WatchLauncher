@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/signature"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+ 
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+ 
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp" 
+                android:text="@string/logininfo"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" /> 
+
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="32dp" 
+                android:text="@string/confirm_info_wan"
+                android:textColor="@color/default_blue_color"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp" 
+            android:background="@color/default_layout_color" >
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="#ffffff" >
+
+            <EditText
+                android:id="@+id/signed_name"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="left|top"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/nickname_text"
+                android:background="@null"
+                android:focusableInTouchMode="true"
+                android:hint="个性签名"
+                android:maxLength="60"
+                android:inputType="text|textPersonName|textEmailAddress|textMultiLine"
+                android:maxLines="3"
+                android:paddingLeft="5dp" 
+                android:textColor="@color/activity_item_color"
+                android:textColorHint="#cecece"
+                android:singleLine="false"
+                android:textSize="15sp" />
+            
+          <TextView
+                android:id="@+id/max_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="32dp"  
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+    </LinearLayout>
+
+</RelativeLayout>

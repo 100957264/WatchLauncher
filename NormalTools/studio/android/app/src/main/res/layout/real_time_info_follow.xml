@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical" >
+
+        
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/real_time_info"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+             <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+                     
+             <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:text="@string/card_text" 
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="34dp"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+             
+        </FrameLayout>
+
+        <com.fise.xiaoyu.ui.widget.MyScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_fragment_bk_color"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/line0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_spacing_height"
+                    android:textColor="@color/default_layout_color" />
+
+                <TextView
+                    android:id="@+id/jiange0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_line_height"
+                    android:textColor="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/setting_signal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="@string/signal_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/signal_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"
+                        android:text="强"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_line_height"
+                    android:textColor="@color/default_line_color" />
+                
+                 
+             <RelativeLayout
+                    android:id="@+id/setting_electricity"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="@string/electricity_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/electricity_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"
+                        android:text="40%"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_line_height"
+                    android:textColor="@color/default_line_color" />
+                
+                
+                <RelativeLayout
+                    android:id="@+id/setting_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="@string/position_text"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/position_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="17dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_line_height"
+                    android:textColor="@color/default_line_color" />
+                
+                
+            </LinearLayout>
+        </com.fise.xiaoyu.ui.widget.MyScrollView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

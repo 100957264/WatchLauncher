@@ -1,0 +1,283 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <!-- Login form -->
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/regist_verify_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/default_bk">
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/nav_return_press" />
+
+            <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/left_image"
+                android:text="@string/cancel_string"
+                android:textColor="@color/default_black_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="@string/look_for_password"
+                android:textColor="@color/default_black_color"
+                android:textSize="@dimen/text_size_level_4" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/registration_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_layout"
+            android:layout_marginTop="55dp">
+
+            <ImageView
+                android:id="@+id/registration_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/registration_process_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registration_process"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/regist_phone_title"
+                android:textColor="@color/default_dev_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registration_process"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="@string/regist_sms_title"
+                android:textColor="@color/default_dev_color"
+                android:textSize="13sp" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/registration_process"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regist_password_title"
+                    android:textColor="@color/default_reg_text_color"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="10dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/login_page"
+            style="@style/LoginFormContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="90dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/login_input"
+                        android:paddingLeft="40dp"
+                        android:paddingTop="15dp"
+                        android:textColor="@color/default_key_color"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/icon_login_user" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/login_input"
+                        android:hint="@string/input_verify"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:maxLines="1"
+                        android:paddingLeft="42dp"
+                        android:singleLine="true"
+                        android:textColor="@color/default_key_color"
+                        android:textColorHint="@color/default_key_color"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/icon_login_password" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/password_text_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/yanzhen_password"
+                        android:textColor="@color/activity_item_color"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/password1"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:hint="@string/input_verify"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:maxLines="1"
+                        android:paddingLeft="100dp"
+                        android:singleLine="true"
+                        android:textColor="@color/activity_item_color"
+                        android:textColorHint="@color/edit_hit_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/password_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_line_height"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginTop="35dp"
+                        android:background="@color/default_line_color" />
+
+                    <Button
+                        android:id="@+id/retransmission"
+                        android:layout_width="54dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/chat_button"
+                        android:text="@string/retransmission"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/submit_in_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/chat_button"
+                    android:text="@string/submit_text"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/switch_submit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/switch_submit_text"
+                    android:textColor="@color/login_text_color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</merge>

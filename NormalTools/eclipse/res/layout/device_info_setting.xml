@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:text="@string/setting_page_name"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="34dp"
+                android:text="@string/card_text"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:background="@color/default_layout_color" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/setting_device_phone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:text="@string/desc_avatar"
+                android:textColor="@color/small_gray_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/info_settting_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+
+            <com.fise.xw.ui.widget.IMBaseImageView
+                android:id="@+id/user_portrait"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/info_settting_arrow"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:background="@color/default_layout_color" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:text="@string/nickname_name"
+                android:textColor="@color/small_gray_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/nickname_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+
+            <TextView
+                android:id="@+id/nickname_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/nickname_arrow"
+                android:textColor="@color/small_gray_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/dev_sex_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:text="@string/sex"
+                android:textColor="@color/small_gray_color"
+                android:textSize="15sp" />
+
+              <ImageView
+                android:id="@+id/dev_sex_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+
+            <TextView
+                android:id="@+id/dev_sex_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/dev_sex_arrow"
+                android:textColor="@color/small_gray_color"
+                android:textSize="13sp" />
+            
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/xiaowei_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:text="@string/xiaowei_name"
+                android:textColor="@color/small_gray_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/xiaowei_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/small_gray_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/setting_device_layaout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:text="@string/setting_devphone"
+                android:textColor="@color/small_gray_color"
+                android:textSize="15sp" />
+
+         <ImageView
+                android:id="@+id/setting_device_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+
+            <TextView
+                android:id="@+id/setting_device_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/setting_device_arrow"
+                android:textColor="@color/small_gray_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/phone_tishi_layaout"
+            android:layout_width="match_parent"
+            android:layout_height="42dp" >
+
+            <TextView
+                android:id="@+id/phone_tishi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/dev_phone_tishi"
+                android:textColor="@color/tishi_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+
+        <RelativeLayout
+            android:id="@+id/calls_inquiry_layaout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:text="@string/calls_inquiry"
+                android:textColor="@color/small_gray_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/calls_inquiry_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/small_gray_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#e6e6e6" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

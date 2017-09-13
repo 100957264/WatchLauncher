@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="34dp"
+                android:text="@string/info_qr"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/icon_user_info"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/icon_huise_more" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contact_portrait_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="77dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.fise.xiaoyu.ui.widget.IMBaseImageView
+            android:id="@+id/contact_portrait"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:scaleType="centerCrop" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/info_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:textColor="@color/messgae_uname_dark_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/icon_head_woman" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/add_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/messgae_uname_dark_color"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/icon_qr"
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_below="@id/contact_portrait_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/qr_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/icon_qr"
+        android:layout_marginTop="30dp"
+        android:text="扫一扫上面的二维码图案, 加我小雨"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="13sp" />
+ 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

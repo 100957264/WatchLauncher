@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp" 
+                android:text="@string/postion_black"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_refresh"
+        android:layout_width="55dp"
+        android:layout_height="55dp" 
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="90dp" 
+        android:background="@drawable/btn_shuaxin" />
+    
+    
+    
+      <Button
+        android:id="@+id/location"
+        android:layout_width="55dp"
+        android:layout_height="55dp"  
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" 
+        android:layout_below="@id/btn_refresh"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_location" />
+
+    <RelativeLayout
+        android:id="@+id/postion_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_bk"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/postion"
+            android:textColor="@color/default_black_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/postion_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:text=""
+            android:textColor="@color/default_black_color"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

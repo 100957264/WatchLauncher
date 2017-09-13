@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp" >
+
+    <RelativeLayout
+        android:id="@+id/show_layout"
+        android:layout_width="415dp"
+        android:layout_height="238dp"
+        >
+
+        <ImageView
+            android:id="@+id/layout_bg"
+            android:layout_width="435dp"
+            android:layout_height="258dp"
+            android:background="@drawable/white_frame_add" />
+
+        <TextView
+            android:id="@+id/confirm_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:text="@string/white_confirm_phone"
+            android:textColor="@color/activity_item_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/white_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirm_phone"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/white_input_add"
+            android:focusableInTouchMode="true"
+            android:hint=""
+            android:inputType="text|textPersonName|textEmailAddress"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#353535"
+            android:textColorHint="#cecece"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="200dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/send_cancel"
+            android:textColor="#e93a3a"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button_que"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="200dp"
+            android:layout_toRightOf="@+id/button_cancel"
+            android:background="@null"
+            android:text="@string/send_confirm"
+            android:textColor="#238ac6"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

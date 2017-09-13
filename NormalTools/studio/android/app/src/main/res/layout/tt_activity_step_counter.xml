@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bk"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+          <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/setp_counter_text"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp"
+                android:text="@string/regist_black"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp"/>
+        </FrameLayout>
+
+
+        <com.fise.xiaoyu.ui.widget.MyScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <LinearLayout
+                    android:id="@+id/ll_week"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="日"
+                        android:textColor="@color/week_left"
+                        android:textSize="@dimen/step_week_size"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="一"
+                        android:textColor="@color/week_text"
+                        android:textSize="@dimen/step_week_size"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="二"
+                        android:textColor="@color/week_text"
+                        android:textSize="@dimen/step_week_size"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="三"
+                        android:textColor="@color/week_text"
+                        android:textSize="@dimen/step_week_size"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="四"
+                        android:textColor="@color/week_text"
+                        android:textSize="@dimen/step_week_size"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="五"
+                        android:textColor="@color/week_text"
+                        android:textSize="@dimen/step_week_size"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="六"
+                        android:textColor="@color/week_left"
+                        android:textSize="@dimen/step_week_size"/>
+                </LinearLayout>
+
+                <ViewFlipper
+                    android:id="@+id/flipper1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_week"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_below="@id/flipper1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2014年5月6日"
+                    android:textColor="@color/default_black_color"
+                    android:textSize="@dimen/step_data_size"
+                    android:layout_marginTop="19dp"
+                    android:gravity="center"  />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color"
+                    android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/default_black_color"
+                    android:text="@string/setp_counter_record"
+                    android:layout_marginLeft="@dimen/step_item_left"
+                    android:textSize="@dimen/step_data_size"
+                    android:layout_marginTop="15dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/step_item_height"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/step_item_left"
+                android:layout_marginRight="@dimen/step_item_left"
+                android:background="@drawable/motion_bj">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/default_bk"
+                    android:text="@string/setp_record_text"
+                    android:layout_marginLeft="@dimen/step_item_left"
+                    android:textSize="@dimen/step_record_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/kilometre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/default_bk"
+                    android:text="@string/kilometre"
+                    android:layout_marginRight="@dimen/step_item_left"
+                    android:textSize="@dimen/step_record_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="21dp"/>
+
+                <TextView
+                    android:id="@+id/kilometre_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/default_bk"
+                    android:text=""
+                    android:layout_toLeftOf="@id/kilometre"
+                    android:layout_marginRight="5dp"
+                    android:textSize="@dimen/step_text_title"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:id="@+id/kilometre_time_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/default_bk"
+                    android:text=""
+                    android:layout_marginRight="@dimen/step_item_left"
+                    android:textSize="@dimen/step_record_title"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/kilometre_text"
+                    android:layout_marginTop="10dp"/>
+            </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/step_item_height"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/step_item_left"
+                    android:layout_marginRight="@dimen/step_item_left"
+                    android:background="@drawable/motion_bj">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_bk"
+                        android:text="@string/setp_number_text"
+                        android:layout_marginLeft="@dimen/step_item_left"
+                        android:textSize="@dimen/step_record_title"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <TextView
+                        android:id="@+id/setp_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_bk"
+                        android:text="@string/setp_number"
+                        android:layout_marginRight="@dimen/step_item_left"
+                        android:textSize="@dimen/step_record_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="21dp"/>
+
+                    <TextView
+                        android:id="@+id/setp_number_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_bk"
+                        android:text=""
+                        android:layout_toLeftOf="@id/setp_number"
+                        android:layout_marginRight="5dp"
+                        android:textSize="@dimen/step_text_title"
+                        android:layout_marginTop="12dp"/>
+
+                    <TextView
+                        android:id="@+id/setp_number_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_bk"
+                        android:text=""
+                        android:layout_marginRight="@dimen/step_item_left"
+                        android:textSize="@dimen/step_record_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/setp_number_text"
+                        android:layout_marginTop="10dp"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/step_item_height"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="@dimen/step_item_left"
+                    android:layout_marginRight="@dimen/step_item_left"
+                    android:background="@drawable/motion_bj">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_bk"
+                        android:text="@string/setp_calorie_text"
+                        android:layout_marginLeft="@dimen/step_item_left"
+                        android:textSize="@dimen/step_record_title"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <TextView
+                        android:id="@+id/calorie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_bk"
+                        android:text="@string/calorie"
+                        android:layout_marginRight="@dimen/step_item_left"
+                        android:textSize="@dimen/step_record_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="21dp"/>
+
+                    <TextView
+                        android:id="@+id/calorie_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_bk"
+                        android:text=""
+                        android:layout_toLeftOf="@id/calorie"
+                        android:layout_marginRight="5dp"
+                        android:textSize="@dimen/step_text_title"
+                        android:layout_marginTop="12dp"/>
+
+                    <TextView
+                        android:id="@+id/calorie_time_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/default_bk"
+                        android:text=""
+                        android:layout_marginRight="@dimen/step_item_left"
+                        android:textSize="@dimen/step_record_title"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/calorie_text"
+                        android:layout_marginTop="10dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </com.fise.xiaoyu.ui.widget.MyScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

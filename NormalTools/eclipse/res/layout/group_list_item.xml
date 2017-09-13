@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="82dp"
+    android:background="@color/contact_list_item_bk"
+    android:orientation="horizontal" >
+    
+        <com.fise.xw.ui.widget.IMGroupAvatar
+            android:id="@+id/contact_portrait"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/group_avatar_bk" />
+      
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/contact_portrait"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_line_color" />
+</RelativeLayout>

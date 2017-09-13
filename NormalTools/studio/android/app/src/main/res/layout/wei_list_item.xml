@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/wei_list_height"
+    android:background="@color/contact_list_item_bk"
+    android:orientation="horizontal" >
+    
+    
+    <com.fise.xiaoyu.ui.widget.IMBaseImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/wei_list_head"
+        android:layout_height="@dimen/wei_list_head" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="@dimen/wei_list_typeface" />
+    
+    
+      <TextView
+        android:id="@+id/caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/img"
+        android:layout_below="@+id/tv"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="@dimen/wei_list_typeface" />
+
+    <TextView
+        android:id="@+id/jiange"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:textColor="@color/default_line_color" />
+    
+    
+      <Button
+        android:id="@+id/confReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:text="同意" />
+</RelativeLayout>

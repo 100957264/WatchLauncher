@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_layout_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+ 
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/weiwang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/main_contact"
+                android:textColor="@color/default_bar_black"
+                android:textSize="17sp" />
+            
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"  
+                android:text="@string/setting_dev_phone"
+                android:textColor="@color/default_bk"
+                android:textSize="17sp" />
+                        
+             
+            
+        </FrameLayout>
+
+     
+        <RelativeLayout
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/default_layout_color" >
+
+              
+                 <RelativeLayout
+                    android:id="@+id/xiaowei_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                     <TextView
+                           android:id="@+id/device_id"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/activity_item_color"
+                           android:text="@string/home_name"
+                           android:textSize="16sp"
+                           android:layout_marginLeft="15dp"
+                           android:layout_marginTop="15dp" />
+                                        
+                    <EditText
+                        android:id="@+id/phone_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null" 
+                        android:inputType="text|textPersonName|textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingLeft="100dp"
+                        android:hint="@string/phone_device_name"
+                        android:singleLine="true"
+                        android:textColorHint="@color/edit_hit_color"
+                        android:textSize="15sp"
+                        android:textColor="@color/activity_item_color" /> 
+                          
+                </RelativeLayout>
+            
+                <Button 
+				    android:id="@+id/setting_phone"
+					android:layout_below="@+id/xiaowei_id"
+				    android:layout_width="100dp"
+				    android:layout_height="wrap_content"
+				    android:layout_centerHorizontal="true">
+				 </Button>
+                 
+                 
+        </RelativeLayout>
+        
+  
+    </LinearLayout>
+
+</RelativeLayout>

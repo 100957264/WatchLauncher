@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="@color/catalog_color"
+        android:paddingBottom="0dip"
+        android:paddingLeft="11dip"
+        android:paddingTop="0dip"
+        android:textColor="@color/catalog_bg_color" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical" >
+
+        <com.fise.xiaoyu.ui.widget.IMBaseImageView
+            android:id="@+id/img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:id="@+id/phone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="6dp"
+            android:layout_toRightOf="@+id/img"
+            android:textColor="@color/messgae_uname_dark_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/xiao_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_name"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/img"
+            android:textColor="@color/small_gray_color"
+            android:layout_marginTop="2dp"
+            android:textSize="12sp" />
+        
+      <Button 
+        android:id="@+id/agree"
+        android:layout_width="65dp"
+        android:layout_height="35dp" 
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp" 
+        android:focusable="false"
+        /> 
+        
+   <TextView
+         android:id="@+id/received_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/agree_string"
+         android:layout_centerVertical="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="15dp"
+         android:visibility="gone"
+         android:textSize="14sp"/>
+   
+    </RelativeLayout>
+
+       <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:background="@color/default_line_color" />
+</LinearLayout>

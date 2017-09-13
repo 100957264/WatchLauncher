@@ -1,0 +1,189 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:background="@color/default_bk" >
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/nav_return_press" />
+
+            <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/left_image"
+                android:text="@string/cancel_string"
+                android:textColor="@color/default_black_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="@string/regist_string"
+                android:textColor="@color/default_black_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/registration_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_layout"  >
+
+            <ImageView
+                android:id="@+id/registration_process"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/registration_process" />
+
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registration_process"
+                android:text="@string/regist_phone_title" 
+                android:layout_marginLeft="20dp" 
+                android:layout_marginTop="4dp"
+                android:textColor="@color/default_dev_color"
+                android:textSize="13sp" />
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registration_process"
+                android:text="@string/regist_sms_title"  
+                android:layout_centerHorizontal ="true"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/default_reg_text_color"
+                android:textSize="13sp" />
+                       
+                       
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/registration_process"
+                android:text="@string/regist_password_title" 
+                android:layout_marginRight="26dp" 
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/default_reg_text_color"
+                android:textSize="13sp" />
+                        
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/registration_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/name_text_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/phone_name"
+                    android:textColor="@color/activity_item_color"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/phoneName"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/login_input"
+                    android:hint="@string/reg_phone"
+                    android:inputType="text|textPersonName|textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingLeft="42dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true"
+                    android:textColor="@color/default_key_color"
+                    android:textColorHint="@color/default_key_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/icon_register_phone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/agreement_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/agreement_head"
+                    android:textColor="@color/register_color"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/agreement_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/agreement_head"
+                    android:text="@string/agreement_string"
+                    android:textColor="@color/default_dev_color"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/next_in_button"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/chat_button"
+                android:gravity="center"
+                android:text="@string/regist_string"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</merge>

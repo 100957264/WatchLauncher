@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_layout_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/weiwang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/main_contact"
+                android:textColor="@color/default_bar_black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/device_list"
+                android:textColor="@color/default_bar_black"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/new_device_add"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_add_friend" />
+        </FrameLayout>
+ 
+        <RelativeLayout
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/default_layout_color" >
+
+            <EditText
+                android:id="@+id/search_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/search_box"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="@string/search_text"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/small_gray_color"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/test"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/test"
+                android:background="@drawable/icon_weixin_search" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/telephone_Page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <ImageView
+                android:id="@+id/telephone_manger"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp" 
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/telephone_manger"
+                android:text="@string/card_text"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+				
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/camera_Page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <ImageView
+                android:id="@+id/camera_manger"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/smart_camera"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/camera_manger"
+                android:text="@string/smart_camera_text"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/intercom_Page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/device_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <ImageView
+                android:id="@+id/intercom_manger"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/intelligent2_handset"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/intercom_manger"
+                android:text="@string/intercom_text"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+    </LinearLayout>
+
+</RelativeLayout>

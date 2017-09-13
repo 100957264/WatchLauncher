@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/default_layout_color">
+
+    <FrameLayout
+        android:id="@+id/top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:background="@color/default_top_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/personal_head"
+            android:textColor="@color/default_zhongjian_black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/icon_arrow"
+            android:layout_width="@dimen/title_button"
+            android:layout_height="@dimen/title_button"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/top_bar_default_left"
+            android:background="@drawable/icon_arrow_friends_info" />
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="32dp"
+            android:text="@string/logininfo"
+            android:textColor="@color/default_bar_black"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="@dimen/title_button"
+            android:layout_height="@dimen/title_button"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/icon_huise_more"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/user_button"
+            android:layout_width="60dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_shiyong"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.fise.xiaoyu.ui.widget.HeadImageView
+        android:id="@+id/head_portrait"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:scaleType="center" />
+
+</LinearLayout>

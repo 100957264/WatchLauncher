@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tt_list_item_bk"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/alarm_list_phone"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/confirm_phone"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:focusableInTouchMode="true"
+        android:hint=""
+        android:inputType="text|textPersonName|textEmailAddress"
+        android:maxLines="1"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textColor="@color/activity_item_color"
+        android:textColorHint="#cecece"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_line_color" />
+
+</LinearLayout>

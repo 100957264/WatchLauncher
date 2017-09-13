@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_setting_color">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/step_counter_text"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <!--
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/main_me_tab"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+             -->
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/step_ranking_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/step_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relative_layout_height"
+        android:layout_above="@id/step_ranking_line"
+        android:background="@color/pickimage_item_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_centerHorizontal="true"
+            android:text="步数排行榜"
+            android:textColor="@color/default_bar_black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/ranking_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/step_ranking"
+        android:layout_marginTop ="@dimen/top_bar_default_height"
+        android:background="@null"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:listSelector="@null"
+        android:paddingBottom="1dp"
+        android:transcriptMode="normal"
+        ptr:ptrMode="pullFromStart"
+        ptr:ptrOverScroll="false" />
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/suface_view"
+        android:layout_width="100dp"
+        android:layout_height="170dp"
+        android:layout_margin="15dp"
+        android:layout_alignParentRight="true"  />
+
+    <org.webrtc.SurfaceViewRenderer
+        android:id="@+id/pull_suface_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+
+
+    <Button
+        android:id="@+id/exchange_vedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_vedio_change"
+        android:layout_marginTop="@dimen/user_portrait_left"
+        android:layout_marginLeft="@dimen/user_portrait_left"
+        android:layout_margin="15dp"  />
+
+
+
+    <!--底部挂断　start -->
+
+
+    <RelativeLayout
+        android:id="@+id/cancel_vedio_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/cancel_bottom"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/cancel_vedio_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_cancel_call"
+            android:layout_margin="15dp"   />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cancel_vedio_end"
+            android:textColor="@color/default_bk"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:text="挂断"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/switch_camera_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/cancel_bottom"
+        android:layout_toRightOf="@id/cancel_vedio_layout"
+        android:layout_marginLeft="@dimen/switch_camera_right">
+
+        <Button
+            android:id="@+id/switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_conversion_camera"
+            android:layout_margin="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_camera"
+            android:textColor="@color/default_bk"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:text="@string/switch_camera"   />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/switch_voice_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/cancel_bottom"
+        android:layout_toLeftOf ="@id/cancel_vedio_layout"
+        android:layout_marginRight="@dimen/switch_camera_left">
+
+        <Button
+            android:id="@+id/switch_voiceing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_switched_voice_chat"
+            android:layout_margin="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/switch_voiceing"
+            android:textColor="@color/default_bk"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:text="@string/switch_voice"   />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/vedio_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_above  = "@id/switch_voice_relative"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/default_bk"
+        android:textSize="16sp" />
+    <!--底部挂断　end -->
+
+
+    <ImageView
+        android:id="@+id/m_suface_view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:src="@color/default_black_color"/>
+
+
+        <!-- 头像信息　-->
+    <RelativeLayout
+        android:id="@+id/user_info_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/user_portrait_left"
+        android:layout_marginLeft="@dimen/user_portrait_left">
+
+        <com.fise.xiaoyu.ui.widget.IMBaseImageView
+            android:id="@+id/user_portrait"
+            android:layout_width="@dimen/user_portrait_vedio"
+            android:layout_height="@dimen/user_portrait_vedio"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/vedio_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_portrait"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/default_bk"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/vedio_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_portrait"
+            android:layout_gravity="center"
+            android:layout_below="@id/vedio_name_text"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/being_invited"
+            android:textColor="@color/default_bk"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id ="@+id/cancel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom ="@dimen/cancel_bottom"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/cancel_vedio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_cancel_call"   />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below = "@id/cancel_vedio"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/cancel"
+            android:textColor="@color/default_bk"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+
+    <!--切换语音聊天 Layout-->
+    <RelativeLayout
+        android:id ="@+id/switch_voice_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cancel_layout"
+        android:layout_marginBottom="@dimen/switch_voice_bottom"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/icon_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_switch"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/switch_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below = "@id/icon_switch"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/switch_voice"
+            android:textColor="@color/default_bk"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/textview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/shangyuan_jiaojuxing_down"
+        >
+
+        <TextView
+            android:id="@+id/tv_phone_album"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="手机相册"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:background="@drawable/top_title"
+            android:textColor="@color/default_light_grey_color"
+            android:textSize="@dimen/text_size_level_4"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/small_gray_color"/>
+
+        <TextView
+            android:id="@+id/tv_take_picture"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="拍照"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/default_light_grey_color"
+            android:textSize="@dimen/text_size_level_4"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

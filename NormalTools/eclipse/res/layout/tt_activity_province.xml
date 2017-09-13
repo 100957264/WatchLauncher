@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+ 
+              <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+            
+              <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp" 
+                android:text="@string/select_city"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp"/>
+        </FrameLayout> 
+        
+          
+ 	      <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp" 
+            android:background="@color/default_line_color" />
+ 	      
+ 	      <ListView   
+	        android:id="@+id/list"  
+	        android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content"
+        	android:focusableInTouchMode="true"
+        	android:divider="@null"
+       	    android:focusable="true"> 
+        </ListView>  
+ 	       
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+   <declare-styleable name="swipelistviewstyle">    
+        <attr name="right_width" format="dimension"></attr>  
+    </declare-styleable>
+    
+       <declare-styleable name="MovieRecorderView">
+        <!-- 开始是否打开摄像头 -->
+        <attr name="is_open_camera" format="boolean" />
+        <!-- 一次拍摄最长时间 -->
+        <attr name="record_max_time" format="integer"/>
+        <!-- 视频分辨率宽度 -->
+        <attr name="video_width" format="integer"/>
+        <!-- 视频分辨率高度 -->
+        <attr name="video_height" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="app">
+        <attr name="toolbarview_left_text" format="string"></attr>
+        <attr name="toolbarview_center_text" format="string"></attr>
+        <attr name="toolbarview_right_text" format="string"></attr>
+        <attr name="toolbarview_left_text_color" format="color"></attr>
+        <attr name="toolbarview_center_text_color" format="color"></attr>
+        <attr name="toolbarview_right_text_color" format="color"></attr>
+        <attr name="toolbarview_left_background" format="reference"/>
+        <attr name="toolbarview_right_background" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="NumberPicker">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+        <attr name="lineColor" format="color" />
+        <attr name="maskHight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+
+</resources>

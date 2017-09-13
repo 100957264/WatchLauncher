@@ -1,0 +1,227 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MGIMInitAct">
+
+    <!-- Login form -->
+
+    <FrameLayout
+        android:id="@+id/regist_verify_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bk">
+  
+        
+       <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"   
+                android:textColor="@color/cancel_color"
+                android:textSize="14sp" 
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/cancel_string" /> 
+                
+       
+              <Button
+                android:id="@+id/confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"    
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp" 
+                android:background="@drawable/button_sure" /> 
+                  
+        <LinearLayout
+            android:id="@+id/login_page"
+            style="@style/LoginFormContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+    
+           <TextView
+                android:id="@+id/title"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" 
+                android:text="@string/pass_verify" 
+                android:layout_below="@+id/black"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/activity_item_color"
+                android:textSize="14sp" />
+                          
+ 
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                     <TextView
+                           android:id="@+id/name_text_hint"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/activity_item_color"
+                           android:text="@string/prompt_name"
+                           android:textSize="16sp"
+                           android:layout_marginTop="10dp" />
+                                        
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"  
+                        android:textSize="15sp"
+                        android:layout_marginLeft="100dp" 
+                        android:layout_marginTop="12dp"
+                        android:textColor="#cecece" />
+
+                        <TextView
+                           android:id="@+id/name_line"
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:background="#e6e6e6"
+                           android:layout_marginTop="35dp"  />
+                           
+                                           
+                    <!-- <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignBottom="@+id/name"
+                        android:layout_alignLeft="@+id/name"
+                        android:layout_alignTop="@+id/name"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/tt_login_user" />  -->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp">
+ 
+                    <TextView
+                           android:id="@+id/password_text_hint"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/activity_item_color"
+                           android:text="@string/prompt_password"
+                           android:textSize="16sp"
+                           android:layout_marginTop="10dp" 
+                     />
+                                         
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null" 
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified" 
+                        android:maxLines="1" 
+                        android:inputType="textPassword"
+                        android:hint="@string/input_password"
+                        android:paddingLeft="100dp" 
+                        android:singleLine="true"  
+                        android:textColorHint="#cecece"
+                        android:textSize="15sp"
+                        android:textColor="@color/activity_item_color" />
+                    
+                     <TextView
+                           android:id="@+id/password_line"
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:background="#e6e6e6"
+                           android:layout_marginTop="35dp"/>
+                     
+                </RelativeLayout> 
+
+ 
+                
+                
+          
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21dp">
+ 
+                    <TextView
+                           android:id="@+id/password_zaici_hint"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/activity_item_color"
+                           android:text="@string/prompt_password"
+                           android:textSize="16sp"
+                           android:layout_marginTop="10dp" 
+                     />
+                                         
+                    <EditText
+                        android:id="@+id/password_zai"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null" 
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified" 
+                        android:maxLines="1" 
+                        android:inputType="textPassword"
+                        android:hint="@string/input_zai_password"
+                        android:paddingLeft="100dp" 
+                        android:singleLine="true"  
+                        android:textColorHint="#cecece" 
+                        android:textSize="15sp"
+                        android:textColor="@color/activity_item_color" />
+                    
+                     <TextView
+                           android:id="@+id/password_line_zai"
+                           android:layout_width="match_parent"
+                           android:layout_height="1dp"
+                           android:background="#e6e6e6"
+                           android:layout_marginTop="35dp"/>
+                     
+                </RelativeLayout> 
+ 
+            </LinearLayout> 
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/login_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/login_progress_signing_in"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+</merge>

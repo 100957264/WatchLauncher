@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_bk" >
+
+    <FrameLayout
+        android:id="@+id/top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/default_top_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/historical"
+            android:textColor="@color/default_zhongjian_black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/icon_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/top_bar_default_left"
+            android:background="@drawable/icon_arrow_friends_info" />
+
+        <TextView
+            android:id="@+id/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="34dp"
+            android:text="@string/card_text"
+            android:textColor="@color/default_bar_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="34dp"
+            android:text="查询"
+            android:textColor="@color/cancel_color"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/top_color"
+        android:background="@color/default_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/stat_time"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/top_color" >
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/stat_dev"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/stat_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请选择"
+            android:textColor="@color/activity_item_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/end_time"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/stat_time"
+        android:layout_marginBottom="20dp" >
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/end_dev"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/end_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请选择"
+            android:textColor="@color/activity_item_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/show_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll"
+        android:layout_marginBottom="40dp" >
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="72dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/button_cancel" />
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_confirm" />
+    </RelativeLayout>
+
+</RelativeLayout>

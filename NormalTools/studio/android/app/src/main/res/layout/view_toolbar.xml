@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/layout_root"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/toolbarview_height"
+             android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:id="@+id/layout_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/toolbarview_padding"
+        android:paddingLeft="@dimen/toolbarview_padding"
+        android:paddingRight="@dimen/toolbarview_padding"
+        android:paddingStart="@dimen/toolbarview_padding">
+
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/toolbarview_title_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingLeft="@dimen/toolbarview_padding"
+            android:paddingRight="0dp"
+            android:paddingStart="@dimen/toolbarview_padding">
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/toolbarview_button_max_width"/>
+
+            <TextView
+                android:id="@+id/tv_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorToolBarButton"
+                android:textSize="@dimen/toolbarview_text_size"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/toolbarview_padding"
+            android:paddingLeft="0dp"
+            android:paddingRight="@dimen/toolbarview_padding"
+            android:paddingStart="0dp">
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="@dimen/toolbarview_button_max_width"/>
+
+            <TextView
+                android:id="@+id/tv_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorToolBarButton"
+                android:textSize="@dimen/toolbarview_text_size"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

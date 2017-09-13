@@ -1,0 +1,103 @@
+<resources>
+
+    <string name="title_activity_login">登录IM</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">小雨号</string>
+    <string name="black_pass_name">小雨号/手机号</string>
+     
+    <string name="home_name">用户名</string>
+    <string name="xiaowei_name">小雨号</string>
+    <string name="nickname_name">昵称</string>
+    <string name="touxiang_image">头像</string>
+   	<string name="infoMan">男</string>
+    <string name="woman">女</string>
+    <string name="select_bg">选择背景图</string>
+    <string name="select_gallery">从手机相册中选择</string>
+    <string name="photograph_gallery">拍一张</string>
+    
+    <string name="ordinary">普通模式</string>
+    <string name="power">省电模式</string>
+    <string name="dormancy">休眠模式</string>
+    
+     <string name="bells">响铃模式</string>
+     <string name="vibrates">振动模式</string>
+     <string name="bells_vibrates">响铃 + 振动</string>
+     
+     
+    <string name="xiaowei_show_name">小雨号:</string>
+    <string name="notify_details">通知显示消息详情</string>
+    
+    <string name="new_notice">接收新消息通知</string>
+    <string name="close_notice">已关闭</string>
+    <string name="notice_tishi">如果你要关闭或开启小雨的新消息通知,请在手机的“设置” “通知” 功能中,找到应用程序“小雨”更改</string>
+    <string name="message_tishi">关闭后, 当收到小雨消息时, 通知提示将不显示发信人和内容摘要</string>
+    <string name="zhendong_tishi">当小雨在运行时, 你可以设置是否需要声音或者振动</string>
+        
+    <string name="prompt_password">密码</string>
+    <string name="look_for_password">找回密码</string>
+    <string name="action_sign_in_register">登录</string>
+    <string name="please_waiting">请稍后&#8230;</string>
+    <string name="action_sign_in_short">进入</string>
+    <string name="action_forgot_password">Recover lost password</string>
+    <string name="login_progress_signing_in">正在登录&#8230;</string>
+    <string name="error_invalid_email">用户名不合法</string>
+    <string name="error_invalid_password">亲，密码太短了</string>
+    <string name="error_incorrect_user">请检查用户名密码是否正确</string>
+    <string name="error_name_required">请输入用户名</string>
+    <string name="error_pwd_required">请输入密码</string>
+    <string name="invalid_account">登录失败,请重试</string>
+    <string name="invalid_network">请检查网络是否正常！</string>
+    <string name="login_timeout">登录超时,请重试</string>
+    <string name="login_failed">登录失败,请重试</string>
+    <string name="action_kickout">用户在其他客户端登录</string>
+    
+     <string name="phone_name">手机号码</string>
+     <string name="yanzhen_password">验证码</string>
+     
+     <string name="shuru_password">创建密码</string>
+     <string name="confirm_password">确认密码</string>
+     <string name="shuru_phone">手机或用户名</string>
+     <string name="reg_phone">请输入手机号</string>
+     
+     <string name="input_password">填写密码</string>
+     <string name="input_zai_password">再次填写确认</string>
+      
+     <string name="phone_device_name">手机号码</string>
+     <string name="device_id_name">ID号码</string>
+    <string name="refuse_reason_text">拒绝接受该好友申请的原因:</string>
+
+
+     <string name="tishi_pass_string">请输入6位以上字符(由字母和数字组成)</string>
+    <string name="confirm_enter_protection_string">由于您开启账号保护，在新设备登录需要验证您的手机号码</string>
+      <string name="cancel_string">取消</string>
+      <string name="input_phone">使用账户和密码登录</string>
+      <string name="regist_phone">请输入你的手机号</string>
+      <string name="check_black_phone">确认手机号</string>
+      
+    <string name="regist_string">注册</string>
+    <string name="next_string">下一步</string>
+     <string name="pass_word_hint">为了保障你的帐户安全,  请输入小雨登录密码</string>
+    <string name="replace_tel">更换手机号后, 下次登录可使用新手机号登录.</string>
+    <string name="input_verify_sms">输入验证码</string>
+
+
+      <string name="agreement_string">小雨软件许可及服务器协议</string>
+      <string name="agreement_head">点击"\"注册\""按钮,即表示你同意</string>
+      <string name="regist_queding">确定</string> 
+      
+       <string name="confirm_phone">确定手机号码</string> 
+       <string name="send_phone">我们将发送验证码短信到这个号码: xxxxxxxxxx</string> 
+       <string name="send_cancel">取消</string> 
+       
+       <string name="send_confirm">确定</string> 
+       <string name="regist_verify">短信验证码已发送,  请填写验证码</string>
+       <string name="forget_pass">忘记密码</string>
+
+
+       <string name="input_verify">请输入验证码</string>
+       <string name="white_confirm_phone">请输入你要添加的号码</string> 
+       <string name="pass_verify">请设置小雨密码。你可以用小雨绑定的账号+小雨密码登录，比如使用手机号+小雨登录密码，更快捷。</string>
+       
+       
+</resources>

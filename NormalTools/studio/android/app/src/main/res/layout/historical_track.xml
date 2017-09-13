@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/my_setting_color"
+    >
+
+    <FrameLayout
+        android:id="@+id/top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/default_top_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/historical"
+            android:textColor="@color/default_zhongjian_black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/icon_arrow"
+            android:layout_width="@dimen/title_button"
+            android:layout_height="@dimen/title_button"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/top_bar_default_left"
+            android:background="@drawable/icon_arrow_friends_info" />
+
+        <TextView
+            android:id="@+id/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="34dp"
+            android:text="@string/card_text"
+            android:textColor="@color/default_bar_black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="34dp"
+            android:text="查询"
+            android:textColor="@color/cancel_color"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_below="@id/top_color"
+        android:background="@color/default_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/stat_time"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/top_color"
+        android:background="@color/default_top_color" >
+
+        <TextView
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/stat_dev"
+            android:textColor="@color/historical_start_color"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/stat_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="请选择"
+            android:layout_marginLeft="320px"
+            android:textColor="@color/historical_typeface_color"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/end_time"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/stat_time"
+
+        android:background="@color/default_top_color">
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/end_dev"
+            android:textColor="#494949"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/end_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20px"
+            android:text="请选择"
+            android:layout_marginLeft="320px"
+            android:textColor="@color/historical_typeface_color"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/default_top_color">
+
+        <RelativeLayout
+            android:id="@+id/ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_above="@+id/show_button"
+            android:orientation="vertical"
+         >
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/show_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="72dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/button_cancel" />
+
+            <Button
+                android:id="@+id/button_confirm"
+                android:layout_width="65dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/button_confirm" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

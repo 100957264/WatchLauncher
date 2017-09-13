@@ -1,0 +1,24 @@
+<resources>
+
+    <!--
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="elative_layout_height">53dp</dimen>
+    <dimen name="contact_item_bg_height">58dp</dimen>
+    <dimen name="chat_item_portrait_height">38dp</dimen>
+    <dimen name="contact_fragment_new_friend_bg_height">92dp</dimen>
+    <dimen name="activity_my_information_portrait_bg_height">58dp</dimen>
+    <dimen name="chat_detail_normal_item_bg_height">52dp</dimen>
+    <dimen name="chat_item_group_portrait_height">45dp</dimen>
+    <dimen name="entry_interval">12dp</dimen>
+
+    <dimen name="chat_portrait_height">45dp</dimen>
+
+
+    <!--font_size-->
+    <dimen name="search_bar_text_size">12sp</dimen>
+
+</resources>

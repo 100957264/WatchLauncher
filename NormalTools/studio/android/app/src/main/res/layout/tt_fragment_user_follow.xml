@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user_info"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/information"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_line_height"
+            android:textColor="@color/default_line_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_spacing_height"
+            android:textColor="@color/default_layout_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_line_height"
+            android:textColor="@color/default_line_color" />
+
+        <com.fise.xiaoyu.ui.widget.MyScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_fragment_bk_color"
+                android:orientation="vertical" >
+
+                <!--
+                <TextView
+                    android:id="@+id/line0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_spacing_height"
+                    android:textColor="@color/default_layout_color" />
+
+                <TextView
+                    android:id="@+id/jiange0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_line_height"
+                    android:textColor="@color/default_line_color" />
+
+
+                <TextView
+                    android:id="@+id/jiange2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_line_height"
+                    android:textColor="@color/default_line_color" />
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_spacing_height"
+                    android:textColor="@color/default_layout_color" />
+
+-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/pickimage_item_bg"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="17dp"
+                        android:text="@string/add_blacklist"
+                        android:textColor="@color/activity_item_color"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/BlackListCheckbox"
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:button="@drawable/toggle_checkbox_background"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange_blacklist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_line_height"
+                    android:textColor="@color/default_line_color" />
+
+
+
+                <Button
+                    android:id="@+id/delete_wei_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/user_info_fragment_send_message_btn_margin"
+                    android:layout_marginRight="@dimen/user_info_fragment_send_message_btn_margin"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_cancel_wei"
+                    android:text="@string/delete_friends"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@null" />
+            </LinearLayout>
+        </com.fise.xiaoyu.ui.widget.MyScrollView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

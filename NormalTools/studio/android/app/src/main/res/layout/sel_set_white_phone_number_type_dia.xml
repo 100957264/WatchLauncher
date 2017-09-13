@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/sel_set_number_type_dia_bg">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_input_manual_operation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/white_phone_number_setting"
+        >
+
+        <TextView
+            android:id="@+id/tv_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/input_manual_operation"
+            android:textColor="@color/default_bar_black"
+            android:textSize="@dimen/text_size_level_4" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_go_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/white_phone_number_setting"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/go_contact_list"
+            android:textColor="@color/default_bar_black"
+            android:textSize="@dimen/text_size_level_4" />
+    </RelativeLayout>
+
+</LinearLayout>

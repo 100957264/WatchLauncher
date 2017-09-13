@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/contact_list_item_bk"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/default_layout_color"
+        >
+
+            <com.fise.xiaoyu.ui.widget.SearchEditText
+                android:id="@+id/chat_title_search_tt"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/search_fragment_search_bar_margin_left"
+                android:layout_marginRight="@dimen/search_fragment_search_bar_margin_right"
+                android:background="@drawable/search_box"
+                android:drawableLeft="@drawable/tt_search"
+                android:drawablePadding="10dp"
+                android:paddingRight="15dp"
+                android:hint="搜索"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/default_key_color"
+                android:textSize="14sp" />
+
+            <!--
+
+              <View
+                    android:id="@+id/take_vedio_btn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="61dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/icon_voice" />
+
+                    -->
+
+            <TextView
+                android:id="@+id/search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp"
+                android:text="@string/search_friends_cancel"
+                android:textSize="16sp"
+                android:textColor="@color/cancel_color" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_no_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+
+            <TextView
+                android:id="@+id/search_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:layout_marginLeft="45dp"
+                android:text="@string/search_friends_result"
+                android:textColor="#ABABAB" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/touch_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="搜索指定内容"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/text_size_level_3"
+                    android:textColor="@color/small_gray_color"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_search_chat"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="聊天"
+                            android:textSize="@dimen/text_size_level_1"
+                            android:textColor="@color/small_gray_color"
+                            />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/small_gray_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_search_user"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="用户名"
+                            android:textColor="@color/small_gray_color"
+                            android:textSize="@dimen/text_size_level_1"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/small_gray_color"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_search_group"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="群组"
+                            android:textColor="@color/small_gray_color"
+                            android:textSize="@dimen/text_size_level_1"/>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/small_gray_color"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_search_xiaowei"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="小雨"
+                            android:textColor="@color/small_gray_color"
+                            android:textSize="@dimen/text_size_level_1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:divider="@null" >
+            </ListView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="gone" />
+
+</RelativeLayout>

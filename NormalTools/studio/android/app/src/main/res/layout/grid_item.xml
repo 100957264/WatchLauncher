@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent" >
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/iv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/app_name"
+            />
+
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_item"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8.0dip"
+            android:maxLines="1"
+            android:textColor="@color/default_dev_color"
+            android:textSize="@dimen/grid_item_text" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="@dimen/default_line_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/default_line_color" />
+
+    <ImageView
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/default_line_color" />
+</RelativeLayout>

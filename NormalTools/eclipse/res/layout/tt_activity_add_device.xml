@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_layout_color"
+        android:orientation="vertical" >
+                 
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/device_name_tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/device_list"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/add_device"
+                android:textColor="@color/default_bar_black"
+                android:textSize="17sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_top_ling"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/default_layout_color" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#ffffff" >
+
+            <RelativeLayout
+                android:id="@+id/xiaowei_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_info"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <TextView
+                    android:id="@+id/device_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/xiaowei_show_name"
+                    android:textColor="@color/activity_item_color"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@null"
+                    android:hint="@string/device_id_name"
+                    android:inputType="text|textPersonName|textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingLeft="100dp"
+                    android:singleLine="true"
+                    android:textColor="@color/activity_item_color"
+                    android:textColorHint="#cecece"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/add_device"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/chat_button"
+            android:text="@string/confirm_text"
+            android:textColor="#ffffff"
+            android:textSize="17sp" />
+
+        <!-- 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:id="@+id/device_tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_wei"
+                android:textColor="#cecece"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/device_tishi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/device_tishi"
+                android:text="@string/wei_device"
+                android:textColor="#cecece"
+                android:textSize="13sp" />
+        </RelativeLayout> -->
+    </LinearLayout>
+
+</RelativeLayout>

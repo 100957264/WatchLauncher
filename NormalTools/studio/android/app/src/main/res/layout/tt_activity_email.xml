@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+           
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/email"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+ 
+            
+             <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp" 
+                android:text="@string/regist_black"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+                      
+           <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="32dp" 
+                android:text="@string/save_nick_name"
+                android:textColor="@color/default_blue_color"
+                android:textSize="15sp" />
+        </FrameLayout> 
+ 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+        
+
+         <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_spacing_height"
+            android:background="@color/default_layout_color" >
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+      
+        
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="#ffffff" >
+             
+		    <EditText
+		        android:id="@+id/email_name"
+		        android:layout_width="match_parent"
+		        android:layout_height="48dp" 
+		        android:layout_gravity="center"
+		        android:layout_marginBottom="5dp"
+		        android:layout_marginLeft="15dp"
+		        android:layout_marginRight="15dp"
+		        android:layout_marginTop="5dp"
+		        android:background="@null"
+		        android:focusableInTouchMode="true"
+		        android:hint="@string/new_email"
+		        android:inputType="text|textPersonName|textEmailAddress"
+		        android:maxLines="1"
+		        android:paddingLeft="5dp"
+		        android:singleLine="true"
+		        android:textColor="@color/activity_item_color"
+		        android:textColorHint="@color/edit_hit_color"
+		        android:textSize="15sp" />
+        </RelativeLayout>
+        
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:background="@color/default_line_color" />
+
+    </LinearLayout>
+
+</RelativeLayout>

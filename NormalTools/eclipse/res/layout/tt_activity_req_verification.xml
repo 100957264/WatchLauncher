@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emo_bk_color" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/emo_bk_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/show_app_name"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/button_send" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <TextView
+            android:id="@+id/prompt_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/prompt_text"
+            android:textColor="@color/default_group_notice_color"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/emo_bk_color" >
+
+            <EditText
+                android:id="@+id/editTextId"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:singleLine="true"
+                android:text="adffad"
+                android:textColor="@color/default_black_color"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/line_shousu" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

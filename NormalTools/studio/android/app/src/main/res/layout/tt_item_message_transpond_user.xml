@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tt_list_item_bk"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/contact_list_item_bg_height"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"/>
+
+
+
+        <com.fise.xiaoyu.ui.widget.IMBaseImageView
+            android:id="@+id/contact_portrait"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"  />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxWidth="190dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/contact_name_color"
+            android:textSize="@dimen/text_size_level_4" />
+
+    </LinearLayout>
+  
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_line_height"
+        android:background="@color/default_line_color" />
+
+</LinearLayout>

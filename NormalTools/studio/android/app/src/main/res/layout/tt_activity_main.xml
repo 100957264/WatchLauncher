@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/fragment_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.fise.xiaoyu.ui.fragment.ChatFragment" />
+
+    <fragment
+        android:id="@+id/fragment_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.fise.xiaoyu.ui.fragment.ContactFragment" />
+
+     <fragment
+        android:id="@+id/fragment_internal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.fise.xiaoyu.ui.fragment.DeviceListFragment" />
+
+    <fragment
+        android:id="@+id/fragment_my"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        class="com.fise.xiaoyu.ui.fragment.MyFragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/tt_tab_bk"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <com.fise.xiaoyu.ui.widget.NaviTabButton
+            android:id="@+id/tabbutton_chat"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+ 
+        <com.fise.xiaoyu.ui.widget.NaviTabButton
+            android:id="@+id/tabbutton_contact"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.fise.xiaoyu.ui.widget.NaviTabButton
+            android:id="@+id/tabbutton_internal"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+
+        <com.fise.xiaoyu.ui.widget.NaviTabButton
+            android:id="@+id/tabbutton_my"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

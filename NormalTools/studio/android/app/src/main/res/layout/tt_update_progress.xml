@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--自动更新下载进度条  todo 样式需要调整-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_without_down"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:text ="软件版本更新"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/progressbar_color"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

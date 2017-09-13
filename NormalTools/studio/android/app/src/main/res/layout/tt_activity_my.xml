@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/logininfo"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="@dimen/text_size_level_5" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/main_me_tab"
+                android:textColor="@color/default_bar_black"
+                android:textSize="@dimen/text_size_level_4" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+        <com.fise.xiaoyu.ui.widget.MyScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_fragment_bk_color"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/user_top_ling"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/default_spacing_height"
+                    android:background="@color/my_setting_color" >
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/login_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_my_information_portrait_bg_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/touxiang_image"
+                        android:textColor="@color/my_setting_list_color"
+                        android:textSize="@dimen/text_size_level_3" />
+
+                    <ImageView
+                        android:id="@+id/tou_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/tt_default_arrow" />
+
+                    <com.fise.xiaoyu.ui.widget.IMBaseImageView
+                        android:id="@+id/user_portrait"
+                        android:layout_width="@dimen/user_fragment_portrait_icon_height"
+                        android:layout_height="@dimen/user_fragment_portrait_icon_height"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/tou_arrow"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/tt_default_user_portrait_corner" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/user_top_ling2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/default_spacing_height"
+                    android:background="@color/my_setting_color" >
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/nickname_name"
+                        android:textColor="@color/my_setting_list_color"
+                        android:textSize="@dimen/text_size_level_3" />
+
+                    <ImageView
+                        android:id="@+id/phone_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/tt_default_arrow" />
+
+                    <TextView
+                        android:id="@+id/nickname_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/phone_right"
+                        android:ellipsize="end"
+                        android:maxWidth="240dp"
+                        android:singleLine="true"
+                        android:text="@string/phone_device_name"
+                        android:textColor="@color/small_gray_color"
+                        android:textSize="@dimen/text_size_level_2" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/xiaowei"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/xiaowei_name"
+                        android:textColor="@color/my_setting_list_color"
+                        android:textSize="@dimen/text_size_level_3" />
+
+                    <TextView
+                        android:id="@+id/wei_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="36dp"
+                        android:text="@string/phone_device_name"
+                        android:textColor="@color/small_gray_color"
+                        android:textSize="@dimen/text_size_level_2" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/qr_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/QR_code"
+                        android:textColor="@color/my_setting_list_color"
+                        android:textSize="@dimen/text_size_level_3" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="16dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/qr_code_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:clickable="true"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/qr_code" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/tt_default_arrow" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/default_spacing_height"
+                    android:background="@color/my_setting_color" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/sex"
+                        android:textColor="@color/my_setting_list_color"
+                        android:textSize="@dimen/text_size_level_3" />
+
+                    <ImageView
+                        android:id="@+id/sex_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/tt_default_arrow" />
+
+                    <TextView
+                        android:id="@+id/sex_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/sex_arrow"
+                        android:text="@string/phone_device_name"
+                        android:textColor="@color/small_gray_color"
+                        android:textSize="@dimen/text_size_level_2" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/locality_relat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/locality"
+                        android:textColor="@color/my_setting_list_color"
+                        android:textSize="@dimen/text_size_level_3" />
+
+                    <ImageView
+                        android:id="@+id/locality_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/tt_default_arrow" />
+
+                    <TextView
+                        android:id="@+id/locality_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/locality_arrow"
+                        android:text="@string/phone_device_name"
+                        android:textColor="@color/small_gray_color"
+                        android:textSize="@dimen/text_size_level_2" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <RelativeLayout
+                    android:id="@+id/signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/relative_layout_height"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/signature"
+                        android:textColor="@color/my_setting_list_color"
+                        android:textSize="@dimen/text_size_level_3" />
+
+                    <ImageView
+                        android:id="@+id/signature_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/tt_default_arrow" />
+
+                    <TextView
+                        android:id="@+id/signature_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="2dp"
+                        android:layout_toLeftOf="@+id/signature_arrow"
+                        android:ellipsize="end"
+                        android:maxWidth="170dp"
+                        android:singleLine="true"
+                        android:text="@string/phone_device_name"
+                        android:textColor="@color/small_gray_color"
+                        android:textSize="@dimen/text_size_level_2" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <Button
+                    android:id="@+id/logout_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/user_info_fragment_send_message_btn_margin"
+                    android:layout_marginRight="@dimen/user_info_fragment_send_message_btn_margin"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/button_cancel_wei"
+                    android:text="@string/logout"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </com.fise.xiaoyu.ui.widget.MyScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tt_list_item_bk"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/chat_list_item_bg_height"
+        >
+
+
+        <com.fise.xiaoyu.ui.widget.IMGroupAvatar
+            android:id="@+id/contact_portrait"
+            android:layout_width="@dimen/chat_item_icon_height"
+            android:layout_height="@dimen/chat_item_icon_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerCrop"
+           />
+
+
+
+        <ImageView
+            android:id="@+id/device_group_portrait"
+            android:layout_width="@dimen/chat_item_icon_height"
+            android:layout_height="@dimen/chat_item_icon_height"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dev_group_bg"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/message_count_notify"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/message_count_notify_height"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/tt_message_notify"
+            android:minWidth="18dp"
+            android:textColor="@color/default_bk"
+            android:gravity="center"
+            android:textSize="@dimen/message_count_notify_text_size"
+            />
+
+        <ImageView
+            android:id="@+id/forbidden_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red_dot"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/contact_portrait"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/contact_portrait"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxWidth="190dp"
+            android:layout_marginTop="2dp"
+            android:singleLine="true"
+            android:textColor="@color/contact_name_color"
+            android:textSize="@dimen/text_size_level_4" />
+
+        <!--
+        <ImageView
+            android:id="@+id/wei_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/contact_portrait"
+            android:layout_toRightOf="@id/shop_name"
+            android:background="@drawable/ic_contact_list_selected"
+            android:layout_marginLeft="8dp"
+            android:visibility="gone"
+            android:paddingTop="2dp" />
+             -->
+
+        <TextView
+            android:id="@+id/message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/contact_portrait"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/contact_portrait"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:maxWidth="190dp"
+            android:layout_marginBottom="3dp"
+            android:singleLine="true"
+            android:textColor="@color/message_body_text_color"
+            android:textSize="12sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/chat_item_right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:06"
+                android:textColor="@color/message_time_color"
+                android:textSize="@dimen/text_size_level_1" />
+
+            <ImageView
+                android:id="@+id/message_time_no_disturb_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/tt_no_disturb_image"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_line_height"
+        android:background="@color/default_line_color" />
+
+</LinearLayout>

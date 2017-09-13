@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/help_manger_string"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" /> 
+              <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+            
+              <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp" 
+                android:text="@string/page_me"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp"/>
+        </FrameLayout> 
+        
+        
+        
+ 	<RelativeLayout
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="63dp" 
+            android:background="@color/my_setting_color" >
+
+
+            <EditText
+                android:id="@+id/search_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" 
+                android:background="@drawable/search_box" 
+                android:hint="@string/search_text"
+                android:singleLine="true"
+                android:textColor="@color/small_gray_color"
+                android:focusable="false" 
+                android:gravity = "center"
+                android:paddingLeft="10dp"
+        		android:focusableInTouchMode="false"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+            
+            
+             <ImageView
+                android:id="@+id/test"
+                android:layout_width="18dp"
+                android:layout_height="18dp" 
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" 
+                android:background="@null" />
+                  
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="18dp"
+                android:layout_height="18dp" 
+                android:layout_toLeftOf="@+id/test"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true" 
+                android:layout_gravity="center"  
+                android:background="@drawable/icon_weixin_search" /> 
+            
+        </RelativeLayout>
+        
+ 	
+ 	      <TextView
+                android:id="@+id/hotspotIssues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp" 
+                android:text="@string/hotspotIssues"
+                android:textColor="@color/small_gray_color"
+                android:textSize="14sp"/>
+ 	      
+  
+ 	      
+ 	  <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+	        android:layout_marginTop="10dp"
+            android:background="@color/default_line_color" />
+ 	       	      
+ 	      <RelativeLayout
+	        android:id="@+id/help_1"
+	        android:layout_width="match_parent" 
+            android:background ="@color/pickimage_item_bg"
+            android:layout_height="@dimen/relative_layout_height">
+	         
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="20dp" 
+	            android:textColor="@color/my_setting_list_color"
+	            android:textSize="15sp"              
+	            android:text="@string/help_1_string" />
+	        
+	         <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="16dp"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/tt_default_arrow" /> 
+	    </RelativeLayout>
+	     
+ 	    <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/default_line_color" />
+ 	      
+ 	     
+ 	      <RelativeLayout
+	        android:id="@+id/help_2"
+	        android:layout_width="match_parent"  
+            android:background ="@color/pickimage_item_bg"
+            android:layout_height="@dimen/relative_layout_height">
+	         
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="20dp" 
+	            android:textColor="@color/my_setting_list_color"
+	            android:textSize="15sp"              
+	            android:text="@string/help_2_string" />
+	        
+	         <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="16dp"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/tt_default_arrow" /> 
+	    </RelativeLayout>
+	    
+ 	      
+ 	      <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/default_line_color" />
+ 	      
+ 	      
+ 	      
+ 	    <RelativeLayout
+	        android:id="@+id/help_3"
+	        android:layout_width="match_parent"  
+            android:background ="@color/pickimage_item_bg"
+            android:layout_height="@dimen/relative_layout_height">
+	         
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="20dp" 
+	            android:textColor="@color/my_setting_list_color"
+	            android:textSize="15sp"              
+	            android:text="@string/help_3_string" />
+	        
+	         <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="16dp"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/tt_default_arrow" /> 
+	    </RelativeLayout>
+	    
+ 	      
+ 	      <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+ 	       
+    </LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:background="@color/default_top_color" >
+ 
+
+        <Button
+            android:id="@+id/icon_arrow"
+            android:layout_width="@dimen/title_button"
+            android:layout_height="@dimen/title_button"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/top_bar_default_left"
+            android:background="@drawable/icon_arrow_friends_info" />
+ 
+         
+      <Button
+            android:id="@+id/right_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/icon_huise_more" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/src_pic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="matrix"  />
+
+    <com.fise.xiaoyu.ui.widget.ClipView
+        android:id="@+id/clipview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        />
+
+</LinearLayout>

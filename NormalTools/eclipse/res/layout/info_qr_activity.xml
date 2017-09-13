@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="34dp"
+                android:text="@string/info_qr"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/icon_user_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/icon_huise_more" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.fise.xw.ui.widget.IMBaseImageView
+        android:id="@+id/contact_portrait"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="77dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="95dp"
+        android:layout_toRightOf="@+id/contact_portrait"
+        android:ellipsize="end"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="95dp"
+        android:layout_toRightOf="@+id/info_name"
+        android:background="@drawable/icon_head_woman" />
+
+    <TextView
+        android:id="@+id/add_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="123dp"
+        android:layout_toRightOf="@+id/contact_portrait"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/icon_qr"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_below="@id/contact_portrait"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/qr_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/icon_qr"
+        android:layout_marginTop="30dp"
+        android:text="扫一扫上面的二维码图案, 加我小位"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="13sp" />
+ 
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

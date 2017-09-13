@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/top_bar_split_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_line_height"
+        android:background="@color/default_line_color"
+        />
+    <RelativeLayout
+        android:id="@+id/searchInformation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_edit_search_bg_height"
+        android:background="@color/default_layout_color">
+
+        <EditText
+            android:id="@+id/search_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_edit_search_height"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/top_search_bar_margin"
+            android:layout_marginRight="@dimen/top_search_bar_margin"
+            android:background="@drawable/search_box"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:hint="@string/search_text"
+            android:singleLine="true"
+            android:textColor="@color/small_gray_color"
+            android:textSize="@dimen/text_size_level_2" />
+
+        <ImageView
+            android:id="@+id/test"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null" />
+
+        <ImageView
+            android:id="@+id/icon_search"
+            android:layout_width="@dimen/search_icon_height"
+            android:layout_height="@dimen/search_icon_width"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/test"
+            android:background="@drawable/icon_weixin_search" />
+    </RelativeLayout>
+
+</LinearLayout>

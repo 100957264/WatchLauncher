@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/message_notify"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/main_me_tab"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+        </FrameLayout>
+        
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/user_top_ling"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/my_setting_color" >
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/new_notice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/new_notice"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/notice_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/close_notice"
+                android:textColor="@color/small_gray_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/notice_tishi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tishi_layout_height" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/notice_tishi"
+                android:textColor="@color/small_gray_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/notify_details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/notify_details"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:button="@color/toggle_checkbox_background" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/message_tishi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/message_layout_height" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/message_tishi"
+                android:textColor="@color/small_gray_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/forbid"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/forbid_group_message"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/forbid_checkbox"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:button="@color/toggle_checkbox_background" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <!-- 
+        <RelativeLayout
+            android:id="@+id/forbid_tishi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/message_layout_height" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/forbid_tishi"
+                android:textColor="@color/small_gray_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+             -->
+
+        <RelativeLayout
+            android:id="@+id/sound"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/new_msg_notify_got_sound"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/sound_checkbox"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:button="@color/toggle_checkbox_background" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/vibration"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/new_msg_notify_got_vibration"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/vibration_checkbox"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:button="@color/toggle_checkbox_background" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/zhendong_tishi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/message_layout_height" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/zhendong_tishi"
+                android:textColor="@color/small_gray_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tishi_layout_height" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

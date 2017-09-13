@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/add_one_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/emo_bk_color"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="14dp"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_phone_callback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/phone_callback_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_phone_callback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_callback_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/take_phone_callback"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_check_telephone_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/check_telephone_charge"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_check_telephone_charge" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check_telephone_charge"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/check_phone_charges"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/take_kong_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/take_kong1_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_chat_sound"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/take_kong1_btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/take_kong_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/take_kong2_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_chat_sound"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/take_kong2_btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

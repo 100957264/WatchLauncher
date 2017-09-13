@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="85dp"
+              android:background="@drawable/bg_item_app_market_selector"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/default_line_color"/>
+
+        <com.fise.xiaoyu.ui.widget.IMBaseImageView
+            android:id="@+id/app_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/app_icon"
+            android:layout_alignTop="@id/app_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/app_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:textColor="@color/messgae_uname_dark_color"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/app_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:maxWidth="200dp"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/app_descrition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxEms="18"
+                android:maxLines="1"
+                android:maxWidth="200dp"
+                android:textSize="11sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/app_install"
+            android:layout_width="56dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_app_install_selector"
+            android:focusable="false"
+            android:text="安装"
+            android:textColor="#57ada0"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

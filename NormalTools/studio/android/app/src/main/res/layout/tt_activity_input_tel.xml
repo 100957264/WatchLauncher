@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_layout_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+
+            <Button
+                android:id="@+id/icon_arrow_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/update_tel"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="17dp"
+                android:text="@string/next_string"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="11dp"
+            android:text="@string/replace_tel"
+            android:textColor="@color/default_key_color"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/replace_tel_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_gravity="center|left"
+            android:layout_marginTop="3dp"
+            android:text=""
+            android:textColor="@color/default_key_color"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/input_tel_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="45dp"
+            android:textColor="@color/default_bar_black"
+            android:background="@null"
+            android:textSize="16sp"
+            android:text=""/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/verification_password_color" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

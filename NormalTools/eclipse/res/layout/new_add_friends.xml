@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_layout_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+ 
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" 
+                android:text="@string/new_friends"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="17sp" />
+             
+                        
+            <TextView
+               	android:id="@+id/new_friends_bk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/main_contact"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+            
+             
+           <TextView
+                android:id="@+id/new_friends_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="12dp"
+                android:text="@string/new_friends_add"
+                android:textSize="15sp"
+                android:textColor="@color/default_bar_black"/>
+        </FrameLayout>
+
+            <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:background="@color/default_line_color" />
+            
+        <RelativeLayout
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="63dp" 
+            android:background="@color/default_layout_color" >
+
+
+            <EditText
+                android:id="@+id/search_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" 
+                android:background="@drawable/search_box" 
+                android:hint="@string/search_text"
+                android:singleLine="true"
+                android:textColor="@color/small_gray_color"
+                android:focusable="false" 
+                android:gravity = "center"
+                android:paddingLeft="10dp"
+        		android:focusableInTouchMode="false"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+            
+            
+             <ImageView
+                android:id="@+id/test"
+                android:layout_width="18dp"
+                android:layout_height="18dp" 
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true" 
+                android:background="@null" />
+                   
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="16dp"
+                android:layout_height="16dp" 
+                android:layout_toLeftOf="@+id/test"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true" 
+                android:layout_gravity="center"  
+                android:background="@drawable/icon_weixin_search" />
+            <!--  
+            
+           <ImageView
+                android:id="@+id/icon_voice"
+                android:layout_width="24dp"
+                android:layout_height="24dp"  
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"  
+                android:background="@drawable/icon_voice" />
+            -->
+        </RelativeLayout>
+        
+         
+        
+ 	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:background="@color/default_line_color" />
+                
+       
+        <ListView   
+	        android:id="@+id/list"  
+	        android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content"
+        	android:focusableInTouchMode="true"
+        	android:divider="@null"
+       	    android:focusable="true"> 
+        </ListView>  
+         
+       <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:background="@color/default_line_color" />
+         	      
+ 
+    </LinearLayout>
+
+</RelativeLayout>

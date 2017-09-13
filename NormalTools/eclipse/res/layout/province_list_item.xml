@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/my_setting_color"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/default_line_color" />
+
+    <RelativeLayout
+        android:id="@+id/user_top_ling"
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:background="@color/my_setting_color"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/top_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="@string/touxiang_image"
+            android:textColor="@color/my_tuku_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relative_layout_height"
+        android:background="@color/pickimage_item_bg" >
+
+        <RelativeLayout
+            android:id="@+id/location_info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_location" />
+
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/location"
+                android:text="@string/sex"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <TextView
+                android:id="@+id/city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/sex"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/location_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:text="@string/phone_device_name"
+                android:textColor="@color/small_gray_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/default_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

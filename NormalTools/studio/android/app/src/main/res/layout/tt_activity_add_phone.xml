@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_layout_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:background="@color/default_top_color" >
+
+        <Button
+            android:id="@+id/life_icon_arrow"
+            android:layout_width="@dimen/title_button"
+            android:layout_height="@dimen/title_button"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/top_bar_default_left"
+            android:background="@drawable/icon_arrow_friends_info" />
+
+        <TextView
+            android:id="@+id/left_text_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="37dp"
+            android:text="@string/check_phone"
+            android:textColor="@color/default_bar_black"
+            android:textSize="15sp" />
+
+        <com.xiaowei.phone.ClearEditText
+            android:id="@+id/filter_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dip"
+            android:background="@null"
+            android:drawableLeft="@drawable/icon_search"
+            android:hint="搜索"
+            android:paddingLeft="15dp"
+            android:singleLine="true" 
+            android:textColor="@color/default_key_color"
+            android:textSize="14sp" 
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/line_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="45dip"
+            android:background="@drawable/line_shousu"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/icon_search" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/default_line_height"
+        android:background="@color/default_line_color" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/title_layout_no_friends"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:background="@color/catalog_color"
+            android:gravity="center_vertical"
+            android:text="没有匹配的联系人"
+            android:textColor="@color/default_key_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right|top"
+            android:background="@color/default_layout_color"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/title_layout_catalog"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/catalog_color"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingTop="5dip"
+                android:textColor="@color/default_key_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="@color/default_key_color"
+            android:textSize="30.0dip"  
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

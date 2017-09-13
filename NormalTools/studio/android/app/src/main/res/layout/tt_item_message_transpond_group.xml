@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tt_list_item_bk"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/contact_list_item_bg_height"
+        android:orientation="horizontal"
+        >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+            android:button="@drawable/checkbox_background"
+            android:clickable="false"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:layout_marginRight="10dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+           >
+
+            <com.fise.xiaoyu.ui.widget.IMGroupAvatar
+                android:id="@+id/contact_portrait"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/device_group_portrait"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/dev_group_bg"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxWidth="190dp"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/contact_name_color"
+            android:textSize="@dimen/text_size_level_4" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_line_height"
+        android:background="@color/default_line_color" />
+
+</LinearLayout>

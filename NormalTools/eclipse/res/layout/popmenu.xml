@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"   >
+
+     
+    <RelativeLayout  
+	    android:layout_width="130dp"
+	    android:layout_height="155dp" 
+	    android:background="@drawable/weiy_danc_bj"  
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="12dp"
+	    android:layout_alignParentTop="true" 
+	    android:layout_marginTop="10dp"
+	    android:layout_marginBottom="4dp"
+	    >
+    
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+ </RelativeLayout>
+</RelativeLayout>

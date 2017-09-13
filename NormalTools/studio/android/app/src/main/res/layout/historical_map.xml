@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bk"
+    android:orientation="vertical" >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+    <FrameLayout
+        android:id="@+id/top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:clickable="true"
+        android:background="@color/default_top_color" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/query_historical_track"
+            android:textColor="@color/default_zhongjian_black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/icon_arrow"
+            android:layout_width="@dimen/title_button"
+            android:layout_height="@dimen/title_button"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/top_bar_default_left"
+            android:background="@drawable/icon_arrow_friends_info" />
+
+        <TextView
+            android:id="@+id/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="34dp"
+            android:text="@string/historical"
+            android:textColor="@color/default_bar_black"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/zoom_in_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_zoomin_btn_sel"
+            />
+
+        <Button
+            android:id="@+id/zoom_out_btn"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_zoomout_btn_sel"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/top_color" >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_day_height"
+        android:orientation="vertical"
+        android:background="@color/calendar_day_color" >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/icon_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/icon_calendar"  />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2016年10月10日"
+                android:layout_toRightOf="@id/icon_calendar"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/default_bk" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="前一天"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/default_bk" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="后一天"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/default_bk" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/week_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_week_height"
+            android:orientation="horizontal"
+            android:background="@color/default_bk">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="日"
+                android:textColor="@color/calendar_week_color"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="一"
+                android:textColor="@color/calendar_week_color"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="二"
+                android:textColor="@color/calendar_week_color"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="三"
+                android:textColor="@color/calendar_week_color"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="四"
+                android:textColor="@color/calendar_week_color"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="五"
+                android:textColor="@color/calendar_week_color"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="六"
+                android:textColor="@color/calendar_week_color"
+                />
+        </LinearLayout>
+
+
+        <com.codbking.calendar.CalendarLayout
+            android:id="@+id/calendarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/default_bk"
+            >
+
+            <com.codbking.calendar.CalendarDateView
+                android:id="@+id/calendarDateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"
+                android:visibility="gone"
+                />
+         </com.codbking.calendar.CalendarLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+  <!--  @dimen/dev_history_postion_height-->
+    <LinearLayout
+        android:id="@+id/postion_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEEEE"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id = "@+id/hoster_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+          >
+
+            <ImageView
+                android:id="@+id/stat_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/icon_start" />
+
+            <TextView
+                android:id="@+id/start_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/start_title"
+                android:textColor="@color/default_bar_black"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/stat_image"
+                android:textSize="14sp" />
+            
+           <TextView
+               android:id="@+id/start_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+               android:textColor="@color/default_bar_black"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/start_title"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/history_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+          >
+
+            <ImageView
+                android:id="@+id/end_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/icon_end" />
+
+            <TextView
+                android:id="@+id/end_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/end_title"
+                android:textColor="@color/default_bar_black"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@id/end_image"
+                android:textSize="14sp" />
+            
+           <TextView
+               android:id="@+id/end_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/default_bar_black"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/end_title"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/address_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="7dp"
+            android:visibility="gone"
+          >
+
+
+            <RelativeLayout
+                android:id="@+id/address_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+
+             >
+
+            <ImageView
+                android:id="@+id/address_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_locationstart"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/address_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/address_icon_layout"
+                android:layout_marginLeft="2dp"
+                android:orientation="vertical"
+               >
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/default_bar_black"
+                    android:layout_marginTop="3dp"
+                    android:text="10:30"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/default_bar_black"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="14sp" />　
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

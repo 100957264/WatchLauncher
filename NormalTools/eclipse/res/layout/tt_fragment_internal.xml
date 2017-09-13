@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bk"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/internalListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_no_chat"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="0dp" />
+
+    <!--
+    <com.baidu.mapapi.map.TextureMapView
+        android:id="@+id/mTexturemap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.baidu.mapapi.map.TextureMapView>
+    -->
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/texturemapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </com.amap.api.maps2d.MapView>
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/search_background"
+            android:layout_width="430dp"
+            android:layout_height="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/bj_search_frame" />
+
+        <com.fise.xw.ui.widget.IMBaseImageView
+            android:id="@+id/search_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_head_man" />
+
+        <ImageView
+            android:id="@+id/search_line"
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="65dip"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/line_search" />
+
+        <com.fise.xw.ui.widget.SearchEditText
+            android:id="@+id/editText"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="80dip"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"
+            android:background="@null"
+            android:hint="@string/search_hint"
+            android:singleLine="true"
+            android:textColor="@color/small_gray_color"
+            android:textCursorDrawable="@null"
+            android:textSize="14sp" />
+ 
+
+        <ListView
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/editText"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:visibility="gone" >
+        </ListView>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_compass"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/icon_compass" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="24dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/wei_group"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/ditu_group_normal" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_refresh" />
+
+        <Button
+            android:id="@+id/btn_dingwei_normal"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_dingwei_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_marginBottom="24dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_zoom_in"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:background="@drawable/enlarge" />
+
+        <Button
+            android:id="@+id/btn_zoom_out"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/narrow" />
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingdrawer"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:content="@+id/content"
+        android:handle="@+id/id_marker_info1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/id_marker_info1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="21dp"
+                android:layout_height="11dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/map_arrow_dwon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="小李"
+                android:textColor="@color/tishi_color"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/signal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/text_name"
+                android:background="@drawable/wei_signal_ls_0" />
+
+            
+            <!--
+            <ProgressBar
+                android:id="@+id/icon_electricity"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="23dp"
+                android:layout_height="11.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/signal"
+                android:background="@drawable/icon_electricity_empty"
+                android:gravity="center"
+                android:max="100"
+                android:progress="50" 
+                android:progressDrawable="@drawable/opus_custom_progressbar" />
+                  -->
+                  
+             <ImageView
+                android:id="@+id/icon_electricity" 
+                android:layout_width="23dp"
+                android:layout_height="11.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/signal"
+                android:background="@drawable/dev_noelectric"  />
+
+            <TextView
+                android:id="@+id/electricity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@+id/icon_electricity"
+                android:text="20%"
+                android:textColor="@color/tishi_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/coordinates"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/text_name"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/coordinates" />
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/coordinates"
+                android:text="443m"
+                android:textColor="@color/tishi_color"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/line_xiaowei"
+                android:layout_width="2dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/text_name"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@+id/distance"
+                android:background="@drawable/line_weizhi" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/line_xiaowei"
+                android:text="深圳市龙华新区大浪嘉安达大厦19层"
+                android:textColor="@color/tishi_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </SlidingDrawer>
+
+</RelativeLayout>

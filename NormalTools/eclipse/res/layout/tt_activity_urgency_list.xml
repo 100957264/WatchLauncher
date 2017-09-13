@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/emergency_phone"
+                android:textColor="@color/default_bar_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/regist_black"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_top_ling"
+            android:layout_width="fill_parent"
+            android:layout_height="8dp"
+            android:background="@color/default_layout_color" >
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" >
+        </ListView>
+   
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/default_layout_color" />
+
+        <View
+            android:id="@+id/show_zhanghu"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/add_zhanghu"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/addName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/add_phone"
+                android:textColor="@color/cancel_color"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/default_line_color" />
+         
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/default_layout_color" >
+
+            <TextView
+                android:id="@+id/salvation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/salvation_text"
+                android:textColor="@color/tishi_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

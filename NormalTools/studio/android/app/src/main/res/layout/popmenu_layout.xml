@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:background="@drawable/weiy_danc_bj"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_pop_menu_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_item_group" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_group"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:text="发起群聊"
+                android:textSize="@dimen/text_size_level_3"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/default_light_grey_color"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_pop_menu_add_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_add_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/add_friend_pop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@id/iv_add_friend"
+                android:text="添加朋友"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_level_3" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/default_light_grey_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_pop_menu_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_scan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_scan"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:text="扫一扫"
+                android:textSize="@dimen/text_size_level_3"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

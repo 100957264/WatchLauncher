@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_bg_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/user_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_my"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="19dp"
+                android:gravity="center|center_vertical" >
+
+                <com.fise.xw.ui.widget.IMBaseImageView
+                    android:id="@+id/user_portrait"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/tt_default_user_portrait_corner" />
+
+                <TextView
+                    android:id="@+id/nickName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="230dp"
+                    android:singleLine="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/user_portrait"
+                    android:textColor="@color/default_bk"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user_portrait"
+                    android:layout_below="@id/nickName"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="12dp" 
+                    android:textColor="@color/default_bk"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+ 
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow_my" />
+        </RelativeLayout>
+
+        <!-- 
+        <RelativeLayout
+            android:id="@+id/xiaowei_area_line"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/login_bg_color" >
+        </RelativeLayout>  -->
+        <RelativeLayout
+            android:id="@+id/zhanghu_anquan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <ImageView
+                android:id="@+id/xiaowei_vip"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_zhanghaquan"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/xiaowei_vip"
+                android:text="@string/account_security"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+               
+          <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/message_note_Page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <ImageView
+                android:id="@+id/vip_manger"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_mess_note"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/vip_manger"
+                android:text="@string/new_message"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_top_ling2"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/default_layout_color" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/currencyPage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <ImageView
+                android:id="@+id/help_manger"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_currency"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/help_manger"
+                android:text="@string/currency_string"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+
+         <View
+	        android:layout_width="match_parent"
+	        android:layout_height="0.5dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:background="@color/default_line_color" />
+                  
+        <RelativeLayout
+            android:id="@+id/privacyPage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <ImageView
+                android:id="@+id/privacy_manger"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_privacy"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/privacy_manger"
+                android:text="@string/privacy_message"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/user_top_ling4"
+            android:layout_width="fill_parent"
+            android:layout_height="12dp"
+            android:background="@color/default_layout_color" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/about_xiao_Page"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relative_layout_height"
+            android:background="@color/pickimage_item_bg" >
+
+            <ImageView
+                android:id="@+id/about_manger"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_my_about"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/about_manger"
+                android:text="@string/about_xiaowei"
+                android:textColor="@color/my_tuku_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/tt_default_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

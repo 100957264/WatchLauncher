@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#bbbbbb</color>
+    <color name="colorTitle">#000000</color>
+    <color name="colorToolBarButton">#000000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#eeeeee</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#0e9e48</color>
+    <color name="blue">#2269bf</color>
+    <color name="orange">#e0601b</color>
+
+    <!--  editText 文本的颜色 -->
+    <color name="edit_hit_color">#cecece</color>
+    <color name="dev_info_color">#52d6be</color>
+
+
+    <color name="listview_color">#F0F0F0</color>
+    <color name="message_date">#20465A</color>
+    <color name="panel_bk_color">#fffafafa</color>
+    <color name="emo_bk_color">#ffffffff</color>
+    <color name="default_light_black_color">#424242</color>
+
+    <color name="activity_item_color">#353535</color>
+    <color name="common_gray_color">#e4e4e4</color>
+
+    <!-- contact item color -->
+    <color name="messgae_uname_color">#ffee4566</color>
+    <color name="messgae_uname_dark_color">#000000</color>
+    <color name="message_body_text_color">#929292</color>
+
+    <color name="message_card_name_color">#666666</color>
+
+    <color name="message_body_nottext_color">#ffee4566</color>
+    <color name="message_time_color">#929292</color>
+
+    <!-- album -->
+    <color name="list_divider_color">#d1d1d1</color>
+    <color name="album_list_item_count_color">#bcbcbc</color>
+    <color name="user_portrait_bk">#20465A</color>
+
+    <!-- login -->
+    <color name="default_bk">#ffffff</color>
+    <color name="half_transparent_dark">#e0000000</color>
+    <color name="half_transparent_light">#AA000000</color>
+    <color name="login_hint_color">#d4d4d4</color>
+
+    <!-- default -->
+    <color name="default_light_grey_color">#929292</color>
+    <color name="default_blue_color">#0facf3</color>
+    <color name="default_black_color">#000000</color>
+    <color name="default_bar_black">#666666</color>
+    <color name="default_zhongjian_black">#333333</color>
+    <color name="bar_blue_color">#238ac5</color>
+
+    <color name="default_lan_zi_black">#ffffff</color>
+
+    <color name="postion_history">#238ac6</color>
+
+    <color name="default_map_color">#000000</color>
+    <color name="default_group_notice_color">#666666</color>
+
+    <color name="default_title_color">#343434</color>
+    <color name="default_fragment_bk_color">#f2f2f2</color>
+    <color name="default_fragment_title_bk_color">#f4f5f7</color>
+    <color name="default_fragment_search_bk_color">#e3e4e6</color>
+
+    <color name="default_value_color">#333333</color>
+    <color name="contact_name_color">#333333</color>
+    <color name="contact_realname_color">#aaaaaa</color>
+
+
+    <color name="tel_phone_color">#9a9a9a</color>
+
+    <color name="default_postion_color">#98989898</color>
+    <!-- 9999颜色-->
+    <color name="default_key_color">#999999</color>
+
+    <color name="default_verification_password_color">#dedede</color>
+    <color name="verification_password_color">#2187c2</color>
+
+
+    <!--　灰色的线　-->
+    <color name="default_line_color">#d9d9d9</color>
+
+    <!-- contact -->
+    <color name="contact_default_bk">#dedee0</color>
+    <color name="contact_category_title_bk">#f1f0f6</color>
+    <color name="contact_list_item_bk">#ffffff</color>
+    <color name="contact_category_text_color">#858585</color>
+    <color name="contact_side_word_color">#909293</color>
+
+    <!-- group manager -->
+    <color name="group_manager_group_title">#010101</color>
+    <color name="group_manager_user_title">#666666</color>
+    <color name="list_item_sel_color">#eaeaea</color>
+
+    <!-- user detail -->
+    <color name="user_detail_base">#ececec</color>
+    <color name="pickimage_item_bg">#ffffff</color>
+    <color name="login_text_color">#238AC6</color>
+    <color name="default_top_color">#ffffff</color>
+    <color name="default_bar_color">#238ac6</color>
+
+    <color name="default_qr_color">#5e5e5e</color>
+    <color name="default_dev_color">#268dc8</color>
+    <color name="default_lan_dev_color">#2289c5</color>
+    <color name="default_reg_text_color">#dddddd</color>
+
+
+    <color name="my_setting_color">#f1f1f1</color>
+    <color name="my_nick_name_color">#5e5e5e</color>
+    <color name="my_user_name_color">#929292</color>
+
+    <color name="edit_hint_color">#A2A0A0</color>
+    <color name="cancel_color">#238ac6</color>
+    <color name="select_group_disabled">#238ac6</color>
+    <color name="small_gray_color">#989898</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color>
+    <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color>
+    <!-- Android standard ICS color -->
+
+    <drawable name="toum">#00000000</drawable>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+
+    <color name="register_color">#959595</color>
+
+    <color name="tishi_color">#bbbbbb</color>
+
+
+    <color name="calendar_day_color">#238ac6</color>
+    <color name="calendar_week_color">#3b3b3b</color>
+
+
+    <color name="catalog_color">#E0E0E0</color>
+
+
+    <!--  设置/我的 列表字体的颜色　-->
+    <color name="my_setting_list_color">#5d5d5d</color>
+
+    <!--  layout背景的颜色　-->
+    <color name="default_layout_color">#f3f3f3</color>
+
+    <!--  place adress的颜色　-->
+    <color name="place_adress_color">#9B9B9B</color>
+
+    <!--  place name的颜色　-->
+    <color name="place_name_color">#323232</color>
+
+
+    <!--  historical 　时间选择-->
+    <color name="historical_start_color">#494949</color>
+
+    <!--  小视频　按住颜色-->
+    <color name="shoot_vedio_color">#ECEBF1</color>
+
+    <!--  强制更新字体颜色-->
+    <color name="android_update_color">#4fd922</color>
+
+    <!--  catalog背景颜色-->
+    <color name="catalog_bg_color">#454545</color>
+
+    <!--  preview颜色-->
+    <color name="preview_layout_color">#86222222</color>
+
+    <!--  historical start/end字体颜色-->
+    <color name="historical_typeface_color">#AEAEAE</color>
+
+    <!--  historical start/end字体颜色-->
+    <color name="button_que_color">#238ac6</color>
+
+
+    <!--  setting phone字体颜色-->
+    <color name="setting_phone_color">#6677b7</color>
+
+
+    <!--  设备宫格颜色 -->
+    <color name="device_follow_line">#28ececec</color>
+
+    <!--  设备字体颜色 -->
+    <color name="device_info_color">#7b7b7b</color>
+    <color name="device_info_left">#292929</color>
+
+
+    <!--计步颜色-->
+    <color name="week_left">#e53030</color>
+    <color name="week_text">#323232</color>
+
+
+    <!--设备生日-->
+    <color name="background">#FFFFFF</color>
+    <color name="split_line">#11112233</color>
+    <color name="text1">#59B29C</color>
+    <color name="text2">#333333</color>
+
+    <color name="color1">#F0F0F0</color>
+    <color name="color2">#FFFFFF</color>
+    <color name="color3">#B0B0B0</color>
+    <color name="color4">#666666</color>
+    <color name="color5">#57C5E8</color>
+
+
+    <color name="phone_name_detail">#5a6e96</color>
+
+</resources>

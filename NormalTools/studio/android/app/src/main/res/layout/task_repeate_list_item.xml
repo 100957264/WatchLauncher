@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="288dp"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:background="@color/white"
+   >
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="25dp"
+    android:layout_centerVertical="true">
+
+    <TextView
+        android:id="@+id/tv_repeate_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周一"
+        android:textSize="18sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/default_black_color"
+        android:layout_centerVertical="true"
+       />
+</LinearLayout>
+
+
+
+    <CheckBox
+        android:id="@+id/cb_repeate_value_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkbox_background"
+        android:clickable="false"
+      />
+
+</RelativeLayout>

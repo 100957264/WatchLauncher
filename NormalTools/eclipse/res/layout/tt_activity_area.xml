@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/xiaowei_area"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+              <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/icon_arrow_friends_info" />
+            
+              <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32dp" 
+                android:text="@string/page_me"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp"/>
+        </FrameLayout>
+        
+        
+		<LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="100.0dp"
+            android:background="@color/pickimage_item_bg" >
+              
+		  <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="100.0dp"
+            android:layout_weight="1"
+            android:background="@color/pickimage_item_bg" >
+            
+		      
+		    <ImageView
+                android:id="@+id/icon_card_machine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" 
+                android:layout_marginTop="24dp"
+                android:background="@drawable/icon_card_machine" />
+		    
+		     <TextView
+                android:id="@+id/card_machine_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+ 				android:layout_centerHorizontal="true" 
+ 				android:layout_below="@+id/icon_card_machine"
+                android:text="@string/card_text"
+                android:layout_marginTop="8dp"
+                android:textColor="#000000"
+                android:textSize="14sp"/>
+		      		     
+            <View
+	        	android:layout_width="1dp"
+	       	 	android:layout_height="100.0dp"
+	        	android:background="@color/default_line_color" />
+          </RelativeLayout>
+          
+		    
+		 <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="100.0dp"
+            android:layout_weight="1"
+            android:background="@color/pickimage_item_bg" >
+            
+		     
+		     <ImageView
+                android:id="@+id/icon_electric_vehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true" 
+                android:layout_marginTop="24dp"
+                android:background="@drawable/icon_electric_vehicle" />
+            
+		     
+		      <TextView
+                android:id="@+id/electric_vehicle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+ 				android:layout_centerHorizontal="true" 
+ 				android:layout_below="@+id/icon_electric_vehicle"
+                android:text="电动车"
+                android:textColor="#000000"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"/>
+		                   
+           <View
+	        	android:layout_width="1dp"
+	       	 	android:layout_height="100.0dp"
+	        	android:background="@color/default_line_color" />
+              		   
+          </RelativeLayout>
+          
+		  <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="100.0dp"
+            android:layout_weight="1"
+            android:background="@color/pickimage_item_bg" >
+              
+		  <View
+	        android:layout_width="1dp"
+	        android:layout_height="100.0dp"
+	        android:background="@color/default_line_color" />
+		         
+          </RelativeLayout>
+		    
+          
+        </LinearLayout>
+
+    </LinearLayout>
+ -->
+</RelativeLayout>

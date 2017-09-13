@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/ranking_list"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+        </FrameLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_spacing_height"
+            android:background="@color/default_layout_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/my_ranking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pickimage_item_bg" >
+
+            <com.fise.xiaoyu.ui.widget.IMBaseImageView
+                android:id="@+id/my_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="7dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/my_image"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/xiaoyu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:ellipsize="end"
+                    android:maxEms="10"
+                    android:singleLine="true"
+                    android:textColor="@color/messgae_uname_dark_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/rangking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:listSelector="#00000000"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:maxWidth="200dp"
+                    android:singleLine="true"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/step_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:focusable="false" />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_spacing_height"
+            android:background="@color/default_layout_color" />
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:divider="@null"
+            android:focusable="true">
+        </ListView>
+
+        <View
+            android:id="@+id/bttom_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+    </LinearLayout>
+		
+</RelativeLayout>

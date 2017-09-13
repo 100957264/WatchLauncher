@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/user_info"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/information"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:textColor="#e6e6e6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:textColor="@color/default_layout_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:textColor="#e6e6e6" />
+
+        <com.fise.xw.ui.widget.MyScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="vertical"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/default_fragment_bk_color"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/line0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:textColor="@color/default_layout_color" />
+
+                <TextView
+                    android:id="@+id/jiange0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:textColor="#e6e6e6" />
+
+                <RelativeLayout
+                    android:id="@+id/setting_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:id="@+id/show_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="@string/setting_label"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/arrow_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/tt_default_arrow" />
+
+                    <TextView
+                        android:id="@+id/show_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="36dp"
+                        android:layout_toLeftOf="@id/arrow_label"
+                        android:ellipsize="end"
+                        android:maxWidth="160dp"
+                        android:singleLine="true"
+                        android:text="@string/setting_label"
+                        android:textColor="@color/small_gray_color"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:textColor="#e6e6e6" />
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"
+                    android:textColor="@color/default_layout_color" />
+
+                <!--
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/pickimage_item_bg"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="17dp"
+                        android:text="@string/no_he_watch"
+                        android:textColor="@color/activity_item_color"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/WatchPostionCheckbox"
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:button="@color/toggle_checkbox_background"
+                        android:checked="true"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:textColor="#e6e6e6" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/pickimage_item_bg"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="17dp"
+                        android:text="@string/no_watch_he"
+                        android:textColor="@color/activity_item_color"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/WatchHeCheckbox"
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:button="@color/toggle_checkbox_background"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:textColor="#e6e6e6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:textColor="#ebebeb" />
+                -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:background="@color/pickimage_item_bg"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:paddingLeft="17dp"
+                        android:text="@string/add_blacklist"
+                        android:textColor="@color/activity_item_color"
+                        android:textSize="15sp" />
+
+                    <CheckBox
+                        android:id="@+id/BlackListCheckbox"
+                        android:layout_width="54dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:button="@color/toggle_checkbox_background"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange_blacklist "
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:textColor="#e6e6e6" />
+
+                <!--
+                <RelativeLayout
+                    android:id="@+id/complaints"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/pickimage_item_bg" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="17dp"
+                        android:text="@string/complaints"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/tt_default_arrow" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/jiange_zuihou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:textColor="#e6e6e6" />
+                -->
+
+                <Button
+                    android:id="@+id/delete_wei_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_cancel_wei"
+                    android:text="@string/delete_friends"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@null" />
+            </LinearLayout>
+        </com.fise.xw.ui.widget.MyScrollView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

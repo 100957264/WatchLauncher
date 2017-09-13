@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+         <FrameLayout
+            android:id="@+id/web_top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height" 
+            android:layout_alignParentTop="true" 
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/web_icon_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/web_left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp" 
+                android:text="@string/blackList"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+        </FrameLayout>
+    
+    <TextView
+        android:id="@+id/android_update_url"
+        android:layout_width="wrap_content" 
+        android:layout_height="3dp"
+        android:background="@color/android_update_color"
+        android:text="" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </WebView>
+
+    
+
+</LinearLayout>

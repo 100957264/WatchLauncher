@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/marker_head"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/icon_dingw_bird_ren"
+        android:gravity="center" />
+
+    <ImageView
+        android:id="@+id/name_bg"
+        android:layout_width="32dp"
+        android:layout_height="17dp"
+        android:layout_below="@+id/marker_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_name"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/show_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/name_bg"
+        android:layout_below="@+id/marker_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/background_name"
+        android:gravity="center"
+        android:text="ID:9"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+</RelativeLayout>

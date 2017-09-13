@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tt_list_item_bk"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_no_network"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/not_net_layout_height"
+        android:orientation="vertical">
+
+        <!-- todo eric specify the detail height is not a good option -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="#ffeeee">
+
+            <ImageView
+                android:id="@+id/imageWifi"
+                android:layout_width="@dimen/no_net_warning_icon_width"
+                android:layout_height="@dimen/no_net_warning_icon_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/warning" />
+
+            <TextView
+                android:id="@+id/disconnect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/imageWifi"
+                android:text="@string/no_network"
+                android:textColor="#ABABAB" />
+
+            <!-- android:src="@drawable/tt_msg_tip" -->
+
+
+            <ImageView
+                android:id="@+id/progressbar_reconnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:background="@drawable/loading_progress_round" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/message_divider_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/list_divider_color"
+            android:textColor="@color/message_time_color"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:stretchColumns="0,1">
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_app_market_type1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/btn_app_market_header_selector1"
+                    android:text="男生频道"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btn_app_market_type2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/btn_app_market_header_selector2"
+                    android:text="女生频道"
+                    android:textColor="@color/white"/>
+
+
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_app_market_type3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/btn_app_market_header_selector3"
+                    android:text="学习教育"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/btn_app_market_type4"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/btn_app_market_header_selector4"
+                    android:text="精品推荐"
+                    android:textColor="@color/white"/>
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="@color/gray"/>
+
+    </LinearLayout>
+</FrameLayout>

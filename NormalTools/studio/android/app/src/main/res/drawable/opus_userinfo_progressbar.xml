@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/background" >
+        <clip android:drawable="@drawable/shebei_noelectric"/>
+    </item>
+	<item android:id="@android:id/progress" >
+	    <clip android:drawable="@drawable/shebei_electric_7"/>
+    </item>
+</layer-list>

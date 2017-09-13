@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/func_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/new_friends_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/new_friends_btn"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_weiyou_newfriend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_friends_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/wei_new_friends"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/contact_unmessage_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/new_friends_btn"
+                android:background="@drawable/tt_message_notify"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="99+"
+                android:textColor="@android:color/white"
+                android:textSize="10sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wei_friends_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/wei_friends_btn"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_weiyou_weiyou" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wei_friends_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/wei_friends_text"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wei_group_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/wei_group_btn"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_weiyou_weiqun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wei_group_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/wei_group_text"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/friends_group_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:id="@+id/friends_group_btn"
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_weiyou_haoyouqun" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/friends_group_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/friends_group_text"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+ 
+    
+    
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/func_layout"
+            android:background="@color/default_line_color" />
+
+</RelativeLayout>

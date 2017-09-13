@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bk"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:text="@string/xiaowei_list"
+                android:textColor="@color/default_bar_black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/new_device_add"
+                android:layout_width="@dimen/button_add_friend_height"
+                android:layout_height="@dimen/button_add_friend_height"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="18dp"
+                android:background="@drawable/button_add_friend" />
+        </FrameLayout>
+
+        <View
+            android:id="@+id/top_bar_split_line"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+        <RelativeLayout
+            android:id="@+id/information"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/chat_edit_search_bg_height"
+            android:background="@color/default_layout_color" >
+
+            <EditText
+                android:id="@+id/search_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/chat_edit_search_height"
+                android:layout_centerInParent="true"
+                android:background="@drawable/search_box"
+                android:layout_marginLeft="@dimen/top_search_bar_margin"
+                android:layout_marginRight="@dimen/top_search_bar_margin"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="@string/search_text"
+                android:singleLine="true"
+                android:textColor="@color/small_gray_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size_level_2" />
+
+            <ImageView
+                android:id="@+id/test"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@null" />
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="@dimen/search_icon_height"
+                android:layout_height="@dimen/search_icon_height"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/test"
+                android:background="@drawable/icon_weixin_search" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/list_device"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/ll_nodevice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f3f3f3"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/icon_nodevice_new" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60px"
+                    android:text="@string/no_device"
+                    android:textColor="#7d7d7d"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15px"
+                    android:text="@string/add_or_buy_device"
+                    android:textColor="#bdbebe"
+                    android:textSize="@dimen/text_size_level_2" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

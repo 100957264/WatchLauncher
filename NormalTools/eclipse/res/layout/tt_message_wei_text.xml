@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fise.xw.ui.widget.message.WeiRenderView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical"
+    android:paddingBottom="15dp" >
+
+    
+  <RelativeLayout 
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+    android:background="@drawable/tt_message_title_time_bg"
+	android:layout_gravity="center_horizontal"> 
+
+    <TextView
+        android:id="@+id/prompt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp" 
+        android:paddingBottom="5dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="5dp" 
+        android:text="对方请求你为位友"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" >
+    </TextView>
+
+      <TextView
+        android:id="@+id/agree_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="5dp" 
+        android:layout_toRightOf="@+id/prompt_title"
+        android:text="同意"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" >
+    </TextView>
+    
+       <TextView
+        android:id="@+id/refuse_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="11dp" 
+        android:paddingBottom="5dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="5dp" 
+        android:layout_toRightOf="@+id/agree_title"
+        android:text="拒绝"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" >
+    </TextView>
+    </RelativeLayout>
+    
+</com.fise.xw.ui.widget.message.WeiRenderView>

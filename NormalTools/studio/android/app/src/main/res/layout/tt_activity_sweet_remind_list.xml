@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bk" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color">
+
+            <LinearLayout
+                android:id="@+id/icon_arrow_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                >
+
+                <Button
+                    android:id="@+id/icon_arrow"
+                    android:layout_width="@dimen/title_button"
+                    android:layout_height="@dimen/title_button"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/icon_arrow_friends_info" />
+
+                <TextView
+                    android:id="@+id/left_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/children_watch_vehicle"
+                    android:textColor="@color/default_bar_black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+
+            <Button
+                android:id="@+id/right_button"
+                android:layout_width="@dimen/button_add_friend_height"
+                android:layout_height="@dimen/button_add_friend_height"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/button_add_friend" />
+
+            <TextView
+                android:id="@+id/center_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sweet_remind"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/my_setting_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+        <ListView
+            android:id="@+id/list_device_task"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/no_data_hint_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="51dp"
+        android:background="#f3f3f3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/no_data_hint_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/task_list_no_data_bg"
+                />
+
+            <TextView
+                android:id="@+id/tv_no_data1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_sweet_reminder_hint1"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#7d7d7d"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_no_data2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/no_sweet_reminder_hint2"
+                android:textSize="@dimen/text_size_level_2"
+                android:textColor="#bdbebe"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

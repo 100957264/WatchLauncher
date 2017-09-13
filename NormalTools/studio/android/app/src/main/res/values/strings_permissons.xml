@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--允许应用程序访问和修改checkin数据库中”properties”表数据-->
+    <string name="android.permission.ACCESS_CHECKIN_PROPERTIES">修改数据库</string>
+    <!--允许应用程序通过WiFi或移动基站获取粗略的位置信息-->
+    <string name="android.permission.ACCESS_COARSE_LOCATION">WiFi定位</string>
+    <!--允许应用程序通过GPS获取精确的位置信息-->
+    <string name="android.permission.ACCESS_FINE_LOCATION">GPS定位</string>
+    <!--允许应用程序访问额外的位置提供者命令-->
+    <string name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS">定位</string>
+    <!--允许应用程序获取模拟定位信息用于开发者调试应用-->
+    <string name="android.permission.ACCESS_MOCK_LOCATION">模拟定位</string>
+    <!--允许应用程序获取网络信息状态-->
+    <string name="android.permission.ACCESS_NETWORK_STATE">网络状态</string>
+    <!--允许应用程序使用SurfaceFlinger底层图形显示支持,一般用于游戏或照相机预览界面和底层模式的屏幕截图-->
+    <string name="android.permission.ACCESS_SURFACE_FLINGER">底层图形支持</string>
+    <!--允许应用程序访问Wi-Fi网络状态信息-->
+    <string name="android.permission.ACCESS_WIFI_STATE">WiFi状态</string>
+    <!--允许应用程序获取账户验证信息，主要为GMail账户信息，只有系统级进程才能访问的权限-->
+    <string name="android.permission.ACCOUNT_MANAGER">账户验证</string>
+    <!--允许应用程序使用语音邮件-->
+    <string name="com.android.voicemail.permission.ADD_VOICEMAIL">语音邮件</string>
+    <!--允许应用程序通过账户验证方式访问账户管理ACCOUNT_MANAGER相关信息-->
+    <string name="android.permission.AUTHENTICATE_ACCOUNTS">账户管理</string>
+    <!--允许应用程序更新手机电池统计信息-->
+    <string name="android.permission.BATTERY_STATS">电池统计</string>
+    <!--允许应用程序绑定小插件,告诉appWidget服务需要访问小插件的数据库-->
+    <string name="android.permission.BIND_APPWIDGET">小插件</string>
+    <!--允许应用程序绑定设备管理,请求系统管理员接收者receiver，只有系统才能使用-->
+    <string name="android.permission.BIND_DEVICE_ADMIN">设备管理</string>
+    <!--允许应用程绑定输入法,请求InputMethodService服务，只有系统才能使用-->
+    <string name="android.permission.BIND_INPUT_METHOD">输入法</string>
+    <!--允许应用程绑定RemoteView,必须通过RemoteViewsService服务来请求，只有系统才能用-->
+    <string name="android.permission.BIND_REMOTEVIEWS">RemoteView</string>
+    <!--要求有一个TextService，如SpellCheckerService（拼写检查服务），来确保只有系统能够与之交互-->
+    <string name="android.permission.BIND_TEXT_SERVICE">拼写检查</string>
+    <!--要求有一个VpnService，来确保只有系统能够与之交互-->
+    <string name="android.permission.BIND_VPN_SERVICE">Vpn</string>
+    <!--允许应用程绑定壁纸,必须通过WallpaperService服务来请求，只有系统才能用-->
+    <string name="android.permission.BIND_WALLPAPER">壁纸</string>
+    <!--允许应用程序连接配对过的蓝牙设备-->
+    <string name="android.permission.BLUETOOTH">蓝牙配对</string>
+    <!--允许应用程序管理蓝牙,搜索和配对新的蓝牙设备-->
+    <string name="android.permission.BLUETOOTH_ADMIN">蓝牙搜索</string>
+    <!--允许应用程序能够禁用设备(非常危险)-->
+    <string name="android.permission.BRICK">禁用设备</string>
+    <!--允许应用程序在删除时触发一个提示消息-->
+    <string name="android.permission.BROADCAST_PACKAGE_REMOVED">删除提示</string>
+    <!--允许应用程序收到短信时触发一个广播-->
+    <string name="android.permission.BROADCAST_SMS">短信接收</string>
+    <!--允许应用程序收到广播后快速收到下一个广播-->
+    <string name="android.permission.BROADCAST_STICKY">快速接收广播</string>
+    <!--允许应用程序WAP PUSH服务收到后触发一个广播-->
+    <string name="android.permission.BROADCAST_WAP_PUSH">WAP PUSH</string>
+    <!--允许应用程序拨打电话,从非系统拨号器里初始化一个电话拨号-->
+    <string name="android.permission.CALL_PHONE">拨打电话</string>
+    <!--允许应用程序拨打任何号码，包含紧急号码无需通过拨号用户界面-->
+    <string name="android.permission.CALL_PRIVILEGED">紧急拨号</string>
+    <!--允许应用程序访问摄像头-->
+    <string name="android.permission.CAMERA">摄像头</string>
+    <!--允许应用程序改变组件是否启用的状态-->
+    <string name="android.permission.CHANGE_COMPONENT_ENABLED_STATE">组件状态</string>
+    <!--允许应用程序修改当前设置，如本地化-->
+    <string name="android.permission.CHANGE_CONFIGURATION">设置</string>
+    <!--允许应用程序改变网络连接状态-->
+    <string name="android.permission.CHANGE_NETWORK_STATE">网络连接</string>
+    <!--允许应用程序设置WiFi连接多模式-->
+    <string name="android.permission.CHANGE_WIFI_MULTICAST_STATE">WiFi多播</string>
+    <!--允许应用程序改变Wi-Fi连接状态-->
+    <string name="android.permission.CHANGE_WIFI_STATE">WiFi状态</string>
+    <!--允许应用程序清除应用缓存-->
+    <string name="android.permission.CLEAR_APP_CACHE">清除应用缓存</string>
+    <!--允许应用程序清除应用的用户数据-->
+    <string name="android.permission.CLEAR_APP_USER_DATA">清除用户数据</string>
+    <!--允许应用程序从无线模块启用/禁止位置更新提示-->
+    <string name="android.permission.CONTROL_LOCATION_UPDATES">位置更新</string>
+    <!--允许应用程序删除缓存文件-->
+    <string name="android.permission.DELETE_CACHE_FILES">删除缓存</string>
+    <!--允许应用程序删除应用-->
+    <string name="android.permission.DELETE_PACKAGES">删除应用</string>
+    <!--允许应用程序底层电源管理-->
+    <string name="android.permission.DEVICE_POWER">电源管理</string>
+    <!--允许应用程序RW诊断资源-->
+    <string name="android.permission.DIAGNOSTIC">RW诊断</string>
+    <!--允许应用程序禁用键盘锁-->
+    <string name="android.permission.DISABLE_KEYGUARD">键盘锁</string>
+    <!--允许应用程序从系统服务检索状态转储信息-->
+    <string name="android.permission.DUMP">状态转储</string>
+    <!--允许应用程序扩展或收缩状态栏-->
+    <string name="android.permission.EXPAND_STATUS_BAR">状态栏</string>
+    <!--允许应用程序运行工厂测试模式-->
+    <string name="android.permission.FACTORY_TEST">工厂模式</string>
+    <!--允许应用程序访问闪光灯-->
+    <string name="android.permission.FLASHLIGHT">闪光灯</string>
+    <!--允许应用程序强制使用back后退按键，无论Activity是否在顶层-->
+    <string name="android.permission.FORCE_BACK">后退键</string>
+    <!--允许应用程序访问GMail账户列表-->
+    <string name="android.permission.GET_ACCOUNTS">访问GMail账户</string>
+    <!--允许应用程序获取应用的文件大小-->
+    <string name="android.permission.GET_PACKAGE_SIZE">获取应用大小</string>
+    <!--允许应用程序获取当前或最近运行的应用-->
+    <string name="android.permission.GET_TASKS">最近运行应用</string>
+    <!--允许应用程序使用全局搜索功能-->
+    <string name="android.permission.GLOBAL_SEARCH">全局搜索</string>
+    <!--允许应用程序访问硬件辅助设备，用于硬件测试-->
+    <string name="android.permission.HARDWARE_TEST">访问硬件辅助设备</string>
+    <!--允许应用程序访问本程序的底层事件-->
+    <string name="android.permission.INJECT_EVENTS">访问底层事件</string>
+    <!--允许应用程序安装定位提供者-->
+    <string name="android.permission.INSTALL_LOCATION_PROVIDER">定位提供者</string>
+    <!--允许应用程序安装应用-->
+    <string name="android.permission.INSTALL_PACKAGES">安装应用</string>
+    <!--允许应用程序开内部窗口，不对第三方应用程序开放此权限-->
+    <string name="android.permission.INTERNAL_SYSTEM_WINDOW">内部窗口</string>
+    <!--允许应用程序访问网络连接-->
+    <string name="android.permission.INTERNET">访问网络连接</string>
+    <!--允许应用程序调用killBackgroundProcesses(String)方法结束后台进程-->
+    <string name="android.permission.KILL_BACKGROUND_PROCESSES">结束后台进程</string>
+    <!--允许应用程序管理AccountManager中的账户列表-->
+    <string name="android.permission.MANAGE_ACCOUNTS">管理账户</string>
+    <!--允许应用程序管理程序引用-->
+    <string name="android.permission.MANAGE_APP_TOKENS">管理程序引用</string>
+    <!--允许应用程序执行软格式化，删除系统配置信息-->
+    <string name="android.permission.MASTER_CLEAR">删除系统配置</string>
+    <!--允许应用程序修改全局音频设置-->
+    <string name="android.permission.MODIFY_AUDIO_SETTINGS">修改全局音频设置</string>
+    <!--允许应用程序修改电话状态，如飞行模式等-->
+    <string name="android.permission.MODIFY_PHONE_STATE">修改电话状态</string>
+    <!--允许应用程序格式化可移动文件系统，比如格式化清空SD卡-->
+    <string name="android.permission.MOUNT_FORMAT_FILESYSTEMS">格式化系统</string>
+    <!--允许应用程序挂载、卸载外部文件系统-->
+    <string name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS">挂载文件系统</string>
+    <!--允许应用程序执行NFC近距离通讯操作-->
+    <string name="android.permission.NFC">NFC</string>
+    <!--允许应用程序创建一个永久的Activity-->
+    <string name="android.permission.PERSISTENT_ACTIVITY">永久Activity</string>
+    <!--允许应用程序监视、修改外拨电话-->
+    <string name="android.permission.PROCESS_OUTGOING_CALLS">监视外拨电话</string>
+    <!--允许应用程序读取用户日历数据-->
+    <string name="android.permission.READ_CALENDAR">读取日历</string>
+    <!--允许应用程序读取通话记录-->
+    <string name="android.permission.READ_CALL_LOG">读取通话记录</string>
+    <!--允许应用程序读取联系人通讯录信息-->
+    <string name="android.permission.READ_CONTACTS">读取联系人</string>
+    <!--允许应用程序读取扩展存储器-->
+    <string name="android.permission.READ_EXTERNAL_STORAGE">读取扩展存储器</string>
+    <!--允许应用程序读取帧缓存用于屏幕截图-->
+    <string name="android.permission.READ_FRAME_BUFFER">屏幕截图</string>
+    <!--允许应用程序读取浏览器收藏夹和历史记录-->
+    <string name="com.android.browser.permission.READ_HISTORY_BOOKMARKS">读取收藏夹</string>
+    <!--允许应用程序读取当前键的输入状态，仅用于系统-->
+    <string name="android.permission.READ_INPUT_STATE">输入状态</string>
+    <!--允许应用程序读取系统底层日志-->
+    <string name="android.permission.READ_LOGS">读取系统底层日志</string>
+    <!--允许应用程序读取电话状态-->
+    <string name="android.permission.READ_PHONE_STATE">读取电话状态</string>
+    <!--允许应用程序读取用户的个人信息资料-->
+    <string name="android.permission.READ_PROFILE">读取用户个人信息</string>
+    <!--允许应用程序读取短信内容-->
+    <string name="android.permission.READ_SMS">读取短信内容</string>
+    <!--允许应用程序读取用户的社交流数据-->
+    <string name="android.permission.READ_SOCIAL_STREAM">读取用户的社交流数据</string>
+    <!--允许应用程序读取同步设置，读取Google在线同步设置-->
+    <string name="android.permission.READ_SYNC_SETTINGS">读取同步设置</string>
+    <!--允许应用程序读取同步状态，读取Google在线同步设置-->
+    <string name="android.permission.READ_SYNC_STATS">读取同步状态</string>
+    <!--允许应用程序读取用户词典Provider取得数据-->
+    <string name="android.permission.READ_USER_DICTIONARY">读取用户词典</string>
+    <!--允许应用程序重新启动设备-->
+    <string name="android.permission.REBOOT">重启设备</string>
+    <!--允许应用程序开机自动运行-->
+    <string name="android.permission.RECEIVE_BOOT_COMPLETED">开机运行</string>
+    <!--允许应用程序接收彩信-->
+    <string name="android.permission.RECEIVE_MMS">接收彩信</string>
+    <!--允许应用程序接收短信-->
+    <string name="android.permission.RECEIVE_SMS">接收短信</string>
+    <!--允许应用程序接收WAP PUSH信息-->
+    <string name="android.permission.RECEIVE_WAP_PUSH">接收WAP PUSH</string>
+    <!--允许应用程序录制音频-->
+    <string name="android.permission.RECORD_AUDIO">录制音频</string>
+    <!--允许应用程序改变Z轴排列任务-->
+    <string name="android.permission.REORDER_TASKS">改变Z轴排列任务</string>
+    <!--允许应用程序重新启动其他程序-->
+    <string name="android.permission.RESTART_PACKAGES">重启其他程序</string>
+    <!--允许应用程序发送短信-->
+    <string name="android.permission.SEND_SMS">发送短信</string>
+    <!--允许应用程序监控或控制系统中已经启动的activities-->
+    <string name="android.permission.SET_ACTIVITY_WATCHER">监控已启动的activities</string>
+    <!--允许应用程序设置闹铃提醒-->
+    <string name="com.android.alarm.permission.SET_ALARM">设置闹铃</string>
+    <!--允许应用程序设置程序在后台是否总是退出-->
+    <string name="android.permission.SET_ALWAYS_FINISH">设置程序后台退出</string>
+    <!--设置全局动画缩放-->
+    <string name="android.permission.SET_ANIMATION_SCALE">全局动画缩放</string>
+    <!--设置调试程序，一般用于开发-->
+    <string name="android.permission.SET_DEBUG_APP">调试程序</string>
+    <!--允许底层访问设置屏幕方向和实际旋转-->
+    <string name="android.permission.SET_ORIENTATION">设置屏幕方向</string>
+    <!--允许底层访问设置指针速度-->
+    <string name="android.permission.SET_POINTER_SPEED">设置指针速度</string>
+    <!--允许应用程序设置应用的参数-->
+    <string name="android.permission.SET_PREFERRED_APPLICATIONS">设置应用参数</string>
+    <!--允许应用程序设置最大的运行进程数量-->
+    <string name="android.permission.SET_PROCESS_LIMIT">设置最大的运行进程数量</string>
+    <!--允许应用程序设置系统时间-->
+    <string name="android.permission.SET_TIME">设置时间</string>
+    <!--允许应用程序设置系统时区-->
+    <string name="android.permission.SET_TIME_ZONE">设置时区</string>
+    <!--允许应用程序设置桌面壁纸-->
+    <string name="android.permission.SET_WALLPAPER">设置壁纸</string>
+    <!--允许应用程序设置壁纸建议-->
+    <string name="android.permission.SET_WALLPAPER_HINTS">设置壁纸建议</string>
+    <!--允许应用程序请求发送信号到所有显示的进程中-->
+    <string name="android.permission.SIGNAL_PERSISTENT_PROCESSES">发送信号到进程</string>
+    <!--允许应用程序打开、关闭或禁用状态栏及图标-->
+    <string name="android.permission.STATUS_BAR">状态栏</string>
+    <!--允许应用程序访问订阅RSS Feed内容提供者-->
+    <string name="android.permission.SUBSCRIBED_FEEDS_READ">访问RSS</string>
+    <!--允许应用程序写入或修改订阅RSS Feed内容提供者的数据-->
+    <string name="android.permission.SUBSCRIBED_FEEDS_WRITE">修改RSS</string>
+    <!--允许应用程序打开系统窗口，显示其他应用程序-->
+    <string name="android.permission.SYSTEM_ALERT_WINDOW">打开系统窗口</string>
+    <!--允许应用程序更新设备状态-->
+    <string name="android.permission.UPDATE_DEVICE_STATS">更新设备状态</string>
+    <!--允许应用程序请求从AccountManager验证-->
+    <string name="android.permission.USE_CREDENTIALS">账户验证</string>
+    <!--允许应用程序使用SIP视频服务-->
+    <string name="android.permission.USE_SIP">SIP视频服务</string>
+    <!--允许访问振动设备-->
+    <string name="android.permission.VIBRATE">振动</string>
+    <!--允许应用程序在手机锁屏后进程仍然运行-->
+    <string name="android.permission.WAKE_LOCK">锁屏运行</string>
+    <!--允许应用程序写入网络GPRS接入点设置-->
+    <string name="android.permission.WRITE_APN_SETTINGS">GPRS设置</string>
+    <!--允许应用程序写入用户日程，但不可读取-->
+    <string name="android.permission.WRITE_CALENDAR">写入日程</string>
+    <!--允许应用程序写入通话记录-->
+    <string name="android.permission.WRITE_CALL_LOG">写入通话记录</string>
+    <!--允许应用程序写入联系人，但不可读取-->
+    <string name="android.permission.WRITE_CONTACTS">写入联系人</string>
+    <!--允许应用程序写入外部存储，如SD卡上写文件-->
+    <string name="android.permission.WRITE_EXTERNAL_STORAGE">写入外部存储</string>
+    <!--允许应用程序写入Google Map服务数据-->
+    <string name="android.permission.WRITE_GSERVICES">写入Google Map</string>
+    <!--允许应用程序写入浏览器历史记录或收藏夹，但不可读取-->
+    <string name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS">写入收藏夹</string>
+    <!--允许应用程序写用户个人档案资料,但不可读取-->
+    <string name="android.permission.WRITE_PROFILE">写入用户资料</string>
+    <!--允许应用程序写入安全设置-->
+    <string name="android.permission.WRITE_SECURE_SETTINGS">写入安全设置</string>
+    <!--允许应用程序读取或写入系统设置-->
+    <string name="android.permission.WRITE_SETTINGS">写入系统设置</string>
+    <!--允许应用程序写短信-->
+    <string name="android.permission.WRITE_SMS">写短信</string>
+    <!--允许应用程序写用户的社交流数据，但不可读取-->
+    <string name="android.permission.WRITE_SOCIAL_STREAM">写入用户社交流数据</string>
+    <!--允许程序Google在线同步设置-->
+    <string name="android.permission.WRITE_SYNC_SETTINGS">写入同步设置</string>
+    <!--允许应用程写入取用户词典Provider的数据-->
+    <string name="android.permission.WRITE_USER_DICTIONARY">写入用户词典</string>
+</resources>

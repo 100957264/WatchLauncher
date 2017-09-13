@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/default_bk"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:background="@color/default_top_color" >
+
+        <TextView
+            android:id="@+id/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:gravity="center"
+            android:text="@string/clear_space"
+            android:textColor="@color/default_bar_black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/icon_arrow"
+            android:layout_width="@dimen/title_button"
+            android:layout_height="@dimen/title_button"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/top_bar_default_left"
+            android:background="@drawable/icon_arrow_friends_info" />
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="32dp"
+            android:text="@string/regist_black"
+            android:textColor="@color/default_bar_black"
+            android:textSize="16sp" />
+
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/top_bar_split_line"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_line_height"
+        android:background="@color/default_line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bk"
+        android:orientation="vertical" >
+
+    <com.fise.xiaoyu.ui.widget.SelfStatistics
+        android:id="@+id/self_statistics"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/other_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/self_statistics"
+            android:layout_marginLeft="77dp"
+            android:layout_marginTop="50dp"
+            android:background="#89c732"/>
+
+        <TextView
+            android:id="@+id/other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/other_image"
+            android:layout_marginLeft="50dp"
+            android:textColor="#333333"/>
+
+
+
+        <ImageView
+            android:id="@+id/xiaowei_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/self_statistics"
+            android:layout_marginLeft="130dp"
+            android:layout_toRightOf="@id/other_image"
+            android:layout_marginTop="50dp"
+            android:background="#4a90e2"/>
+
+        <TextView
+            android:id="@+id/xiaowei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/xiaowei_image"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@id/other_image"
+            android:textColor="#333333"/>
+
+        <Button
+            android:id="@+id/clear_space"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="55dp"
+            android:layout_below="@id/xiaowei"
+            android:background="@drawable/chat_button"
+            android:text="@string/clear_space"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

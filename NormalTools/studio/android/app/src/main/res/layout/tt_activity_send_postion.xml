@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/top_color"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar_default_height"
+        android:background="@color/default_top_color" >
+
+        <Button
+            android:id="@+id/icon_arrow"
+            android:layout_width="@dimen/title_button"
+            android:layout_height="@dimen/title_button"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="@dimen/top_bar_default_left"
+            android:background="@drawable/icon_arrow_friends_info" />
+
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="32dp" 
+            android:text="@string/postion"
+            android:textColor="@color/default_bar_black"
+            android:textSize="15sp" />
+        
+        
+         <TextView
+            android:id="@+id/send"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="5dp"
+             android:gravity="center"
+             android:clickable="true"
+             android:textColor="@color/bar_blue_color"
+             android:textSize="16dp"
+             android:text="@string/send"
+           />
+          
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/btn_dingwei_normal"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_dingwei_normal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/place_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:divider="@null" 
+            android:scrollbars="none" />
+
+        <ProgressBar
+            android:id="@+id/place_progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/loading_anim" />
+    </FrameLayout>
+
+</LinearLayout>

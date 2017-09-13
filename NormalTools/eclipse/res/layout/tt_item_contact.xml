@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+                
+    <TextView           
+	        android:id="@+id/contact_category_title"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@color/default_layout_color"
+	        android:paddingBottom="3dp"
+	        android:paddingLeft="25dp"
+	        android:paddingTop="3dp"
+	        android:textColor="@color/contact_category_text_color"
+	        android:textSize="12sp"
+	        android:visibility="gone"/>  
+		   
+    <View
+	        android:id="@+id/contact_divider"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp" 
+	        android:background="@color/default_line_color" />
+
+    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="12dp"
+	        android:paddingTop="8dp"
+	        android:paddingBottom="8dp"
+	        android:layout_weight="1"
+	        android:background="@drawable/tt_list_item_bk" >
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:button="@color/checkbox_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"/> 
+            
+
+        <com.fise.xw.ui.widget.IMBaseImageView
+            android:id="@+id/contact_portrait"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true" 
+            android:layout_toRightOf="@id/checkBox"
+            android:scaleType="centerCrop"   />   
+
+        <TextView
+            android:id="@+id/contact_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="14dp"
+            android:layout_toRightOf="@id/contact_portrait"
+            android:textColor="@color/contact_name_color"
+            android:maxWidth="260dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="15sp" />
+        
+        <TextView
+            android:id="@+id/contact_realname_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/contact_item_title"
+            android:textColor="@color/contact_realname_color"
+            android:textSize="12sp" />
+        
+        
+       <TextView
+            android:id="@+id/contact_unmessage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight ="35dp"    
+            android:background="@drawable/tt_message_notify"
+			android:textColor="@android:color/white" 
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:gravity="center"
+			android:visibility="gone"
+			android:text="99+" 
+            android:textSize="10sp" /> 
+    </RelativeLayout> 
+    
+     
+        <View
+	        android:id="@+id/contact_buttom"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.5dp" 
+	        android:background="@color/default_line_color"
+	        android:visibility="gone" />
+         
+</LinearLayout>

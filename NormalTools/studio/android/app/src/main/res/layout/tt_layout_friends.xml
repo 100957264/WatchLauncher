@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/add_one_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/emo_bk_color"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="14dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/take_camera_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_photograph" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_camera_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/take_camera_btn_text"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/take_photo_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_photo_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/take_photo_btn_text"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/take_vedio_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/message_video" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_vedio_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/take_vedio_btn_text"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/take_mingpian_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_mingpian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_mingpian_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/take_ming_btn_text"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/add_two_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/emo_bk_color"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+
+        <RelativeLayout
+            android:id="@+id/take_postion_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <View
+                android:id="@+id/take_position_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_position" />
+
+            <TextView
+                android:id="@+id/take_position_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/take_position_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/take_postion_btn_text"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_phone_callback_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:id="@+id/phone_callback_btn"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_phone_callback" />
+
+            <TextView
+                android:id="@+id/phone_callback_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone_callback_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="@string/take_phone_callback"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_phone_callback_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_chat_sound"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_chat_sound"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <View
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/icon_chat_sound"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:textColor="#ffffffff"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

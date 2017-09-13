@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_fragment_bk_color"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/group_name_tip"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/left_btn_tt"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_arrow_friends_info"
+                android:layout_marginLeft="12dp"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/left_txt_tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="32dp"
+                android:text="@string/regist_black"
+                android:textColor="@color/default_bar_black"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/icon_user_info"
+                android:layout_width="60dp"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_sure" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/group_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null" 
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:maxLength="15"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/activity_item_color"
+            android:textColorHint="@color/edit_hit_color"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

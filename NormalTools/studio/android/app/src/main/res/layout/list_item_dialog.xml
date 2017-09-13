@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/text_item_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_dialog_item_height"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/list_dialog_item_margin_left"
+            android:layout_marginRight="@dimen/list_dialog_item_margin_left"
+            android:background="@color/white"
+            android:paddingLeft="14dp"
+            android:textColor="@color/default_black_color"
+            android:textSize="@dimen/text_size_level_5"/>
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="0.5dp"
+           android:layout_marginLeft="@dimen/list_dialog_item_margin_left"
+           android:layout_marginRight="@dimen/list_dialog_item_margin_left"
+           android:background="@color/default_line_color"/>
+
+        <TextView
+            android:id="@+id/text_item_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_dialog_item_height"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/list_dialog_item_margin_left"
+            android:layout_marginRight="@dimen/list_dialog_item_margin_left"
+            android:background="@color/white"
+            android:paddingLeft="14dp"
+            android:textColor="@color/default_black_color"
+            android:textSize="@dimen/text_size_level_5"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/list_dialog_item_margin_left"
+            android:layout_marginRight="@dimen/list_dialog_item_margin_left"
+            android:background="@color/default_line_color"/>
+
+        <TextView
+            android:id="@+id/text_item_three"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_dialog_item_height"
+            android:gravity="center_vertical"
+            android:text="曾经我拥有山河大海"
+            android:paddingLeft="14dp"
+            android:layout_marginLeft="@dimen/list_dialog_item_margin_left"
+            android:layout_marginRight="@dimen/list_dialog_item_margin_left"
+            android:background="@color/white"
+            android:textColor="@color/default_black_color"
+            android:textSize="@dimen/text_size_level_5"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="@dimen/list_dialog_item_margin_left"
+            android:layout_marginRight="@dimen/list_dialog_item_margin_left"
+            android:background="@color/default_line_color"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

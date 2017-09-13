@@ -1,0 +1,183 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MGIMInitAct" >
+
+    <!-- Login form -->
+
+    <FrameLayout
+        android:id="@+id/regist_verify_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_bk" >
+
+        <TextView
+            android:id="@+id/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cancel_string"
+            android:textColor="@color/cancel_color"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/login_page"
+            style="@style/LoginFormContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/forget_pass"
+                android:textColor="@color/activity_item_color"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" >
+
+                    <TextView
+                        android:id="@+id/name_text_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/black_pass_name"
+                        android:textColor="@color/activity_item_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@id/name_text_hint"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="#cecece"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/name_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="35dp"
+                        android:background="#e6e6e6" />
+
+                    <!--
+                         <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignBottom="@+id/name"
+                        android:layout_alignLeft="@+id/name"
+                        android:layout_alignTop="@+id/name"
+                        android:paddingLeft="10dp"
+                        android:src="@drawable/tt_login_user" />
+                    -->
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp" >
+
+                    <TextView
+                        android:id="@+id/password_text_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/yanzhen_password"
+                        android:textColor="@color/activity_item_color"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@null"
+                        android:hint="@string/input_verify"
+                        android:imeActionId="@+id/login"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:maxLines="1"
+                        android:paddingLeft="100dp"
+                        android:singleLine="true"
+                        android:textColor="@color/activity_item_color"
+                        android:textColorHint="#cecece"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/password_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginTop="35dp"
+                        android:background="#e6e6e6" />
+
+                    <Button
+                        android:id="@+id/retransmission"
+                        android:layout_width="54dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/chat_button"
+                        android:text="@string/retransmission"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/submit_in_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/chat_button"
+                    android:text="@string/submit_text"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Login progress -->
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+</merge>

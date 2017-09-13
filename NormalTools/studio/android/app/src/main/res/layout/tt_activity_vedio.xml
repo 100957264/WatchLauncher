@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+   >
+
+
+    <cn.sdut.lsy.video.MovieRecorderView
+        android:id="@+id/movieRecorderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+     />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/progressBar_record"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            />
+
+        <Button
+            android:id="@+id/shoot_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_movie_add_shoot"
+            android:layout_gravity="center_horizontal"
+            android:text="按住拍"
+            android:textColor="@color/shoot_vedio_color"/>
+    </LinearLayout>
+
+
+    </RelativeLayout>

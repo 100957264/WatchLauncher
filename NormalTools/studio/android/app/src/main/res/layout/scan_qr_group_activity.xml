@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contact_list_item_bk" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/contact_list_item_bk"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="34dp"
+                android:text="@string/regist_black"
+                android:textColor="@color/default_bar_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/group_name_add"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="17sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+    </LinearLayout>
+
+    <com.fise.xiaoyu.ui.widget.IMGroupAvatar
+        android:id="@+id/contact_portrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="97dp"
+        android:background="@drawable/group_avatar_bk"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contact_portrait"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:ellipsize="end"
+        android:maxWidth="100dp"
+        android:singleLine="true"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/group_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="7dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/messgae_uname_dark_color"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/show_id"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/show_id"
+        android:background="@color/default_layout_color" >
+
+        <Button
+            android:id="@+id/chat_btn"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/chat_button"
+            android:text="@string/chat_send"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/tt_progressbar"
+        android:indeterminateDuration="4000"
+        android:visibility="visible" />
+
+</RelativeLayout>

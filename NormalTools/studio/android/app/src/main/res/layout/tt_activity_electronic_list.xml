@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/my_setting_color"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:id="@+id/top_color"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/top_bar_default_height"
+            android:background="@color/default_top_color" >
+
+            <Button
+                android:id="@+id/icon_arrow"
+                android:layout_width="@dimen/title_button"
+                android:layout_height="@dimen/title_button"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="@dimen/top_bar_default_left"
+                android:background="@drawable/icon_arrow_friends_info" />
+
+            <TextView
+                android:id="@+id/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="32dp"
+                android:text="@string/regist_black"
+                android:textColor="@color/default_bar_black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/right_button"
+                android:layout_width="@dimen/button_add_friend_height"
+                android:layout_height="@dimen/button_add_friend_height"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/button_add_friend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/electronic_warning"
+                android:textColor="@color/default_zhongjian_black"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_line_height"
+            android:background="@color/default_line_color" />
+
+        <ListView
+            android:id="@+id/list_electronic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+          >
+        </ListView>
+
+        <TextView
+            android:id="@+id/electronic_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/electronic_text"
+            android:textColor="@color/tishi_color"
+            android:textSize="12sp"
+           />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/no_data_hint_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:background="#f3f3f3"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/no_data_hint_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fence_no_data_bg"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_safety_fence_hint1"
+            android:layout_marginTop="20dp"
+
+            android:textSize="15sp"
+            android:textColor="#7d7d7d"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_safety_fence_hint2"
+            android:textSize="@dimen/text_size_level_2"
+            android:textColor="#bdbebe"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

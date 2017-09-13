@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="155dp"
+        android:background="@drawable/weiy_danc_bj"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_dev_pop_menu_scan_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_scan_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_scan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_scan_add"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:text="扫描添加"
+                android:textSize="@dimen/text_size_level_3"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@color/default_light_grey_color"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_dev_pop_menu_manual_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_manual_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/add_friend_pop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_manual_add"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="手动添加"
+                android:textSize="@dimen/text_size_level_3"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/default_light_grey_color"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_dev_pop_menu_buy_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+           >
+
+            <ImageView
+                android:id="@+id/iv_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_goum" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_buy"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:text="购买设备"
+                android:textSize="@dimen/text_size_level_3"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

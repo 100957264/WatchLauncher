@@ -1,0 +1,242 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="title_button">25dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- top bar -->
+	<dimen name="top_bar_default_left">10dp</dimen>
+    <dimen name="device_layout_height">52dp</dimen>
+
+    <!--TTbaseFragment-->
+	<dimen name="top_bar_default_height">51dp</dimen>
+    <dimen name="calendar_week_height">28.0dip</dimen>
+    <dimen name="my_info_image_height">40.0dip</dimen>
+    <dimen name="search_edit_height">35.0dip</dimen>
+    <dimen name="fragment_right_btn_length">50.0dip</dimen>
+    <dimen name="add_all_friends_check_length">24.0dip</dimen>
+    <dimen name="search_icon_height">18dp</dimen>
+    <dimen name="search_icon_width">18dp</dimen>
+    <dimen name="no_net_warning_icon_height">22dp</dimen>
+    <dimen name="no_net_warning_icon_width">22dp</dimen>
+    <dimen name="no_net_warning_progress_bar_height">18dp</dimen>
+    <dimen name="no_net_warning_progress_bar_width">18dp</dimen>
+    <dimen name="not_net_layout_height">49dp</dimen>
+
+
+    <!--contact_fragment-->
+    <dimen name="contact_item_bg_height">64dp</dimen>
+    <dimen name="text_sortsidebar_info_height">80dp</dimen>
+    <dimen name="text_sortsidebar_info_width">80dp</dimen>
+    <dimen name="contact_item_bg_margin_top">8dp</dimen>
+    <dimen name="contact_fragment_portrait_height">45dp</dimen>
+        <!--xiaowei_fragment-->
+        <dimen name="xiaowei_fragment_search_item_bg_height">70dp</dimen>
+        <dimen name="xiaowei_fragment_search_bar_bg_height">40dp</dimen>
+        <!--user_fragment_detail-->
+        <dimen name="user_fragment_portrait_bg_height">86dp</dimen>
+        <dimen name="user_fragment_portrait_icon_height">57dp</dimen>
+        <dimen name="user_fragment_infor_item_bg_height">67dp</dimen>
+        <dimen name="user_fragment_normal_item_bg_height">52dp</dimen>
+
+
+    <!--chat_fragment-->
+    <dimen name="chat_list_item_bg_height">62dp</dimen>
+    <dimen name="contact_list_item_bg_height">52dp</dimen>
+    <dimen name="chat_item_icon_height">47dp</dimen>
+    <dimen name="chat_item_icon_bg_height">47dp</dimen>
+
+    <dimen name="contact_item_icon_height">34dp</dimen>
+    <dimen name="chat_item_icon_margin_top">7dp</dimen>
+    <dimen name="message_count_notify_height">18dp</dimen>
+    <dimen name="message_time_text_size">13sp</dimen>
+    <dimen name="message_body_text_size">12sp</dimen>
+    <dimen name="message_count_notify_text_size">10sp</dimen>
+    <dimen name="chat_edit_search_height">36dp</dimen>
+    <dimen name="chat_edit_search_bg_height">58dp</dimen>
+
+    <!--新朋友的高度-->
+    <dimen name="contact_fragment_new_friend_bg_height">92dp</dimen>
+    <dimen name="contact_fragment_new_friend_bg_margin">10dp</dimen>
+    <dimen name="contact_fragment_new_friend_textsize">13dp</dimen>
+    <dimen name="contact_fragment_unread_title_margin_left">76dp</dimen>
+    <dimen name="contact_fragment_unread_title_margin_top">15dp</dimen>
+    <dimen name="chat_item_checkbox_height">22dp</dimen>
+
+    <dimen name="chat_item_portrait_height">49dp</dimen>
+    <dimen name="chat_item_group_portrait_height">45dp</dimen>
+    <dimen name="activity_my_information_portrait_bg_height">68dp</dimen>
+
+    <!--   详情条目值　　start -->
+    <dimen name="chat_detail_normal_item_bg_height">52dp</dimen>
+    <!--　　详情天气　条目的值　　　-->
+    <dimen name="weather_layout_height">58dp</dimen>
+    <!--　　详情天气头像 　条目值　　　-->
+    <dimen name="info_layout_height">80dp</dimen>
+    <!--　　详情的头像的宽高　　　-->聊天
+    <dimen name="info_image_layout_height">60dp</dimen>
+    <!--  个人详情距离左边　-->
+    <dimen name="info_image_layout_left">21dp</dimen>
+    <!--  个人详情距离右边　-->
+    <dimen name="info_image_layout_right">33dp</dimen>
+    <!--   详情条目值　　end  -->
+    <dimen name="button_add_friend_height">20dp</dimen>
+
+<!--   选择白名单身份 -->
+    <dimen name="dialog_sel_identify_item_height">69dp</dimen>
+
+    <!--　离左边的距离-->
+    <dimen name="info_layout_left">16dp</dimen>
+    <dimen name="info_layout_right">16dp</dimen>
+
+
+    <!--contact start-->
+    <dimen name="image_view_height">45dp</dimen>
+    <dimen name="category_title_left">25dp</dimen>
+    <!--小雨界面list高度-->
+    <dimen name="chat_item_bg_height">64dp</dimen>
+    <!--   搜索距离的值　-->
+    <dimen name="search_phone_height">60dp</dimen>
+    <!--   搜索距离左边　右边的值　-->
+    <dimen name="search_edit_left">15dp</dimen>
+    <dimen name="search_edit_right">15dp</dimen>
+    <!--距离左边　右边的值　-->
+    <dimen name="contact_new_friend_left">10dp</dimen>
+    <dimen name="contact_new_friend_right">10dp</dimen>
+    <!--contact end-->
+
+
+    <!--视频通话界面-->
+    <dimen name="user_portrait_vedio">75dp</dimen>
+    <dimen name="user_portrait_left">20dp</dimen>
+    <dimen name="cancel_bottom">45dp</dimen>
+    <dimen name="switch_voice_bottom">25dp</dimen>
+
+    <dimen name="agree_button_right">35dp</dimen>
+    <dimen name="refuse_button_left">35dp</dimen>
+
+    <dimen name="switch_camera_right">22dp</dimen>
+    <dimen name="switch_camera_left">22dp</dimen>
+
+
+
+    <!--chat start-->
+    <dimen name="chat_image_height">43dp</dimen>
+    <dimen name="chat_item_left">12dp</dimen>
+    <dimen name="chat_item_right">12dp</dimen>
+    <!--chat end-->
+
+    <dimen name="postion_height">95dp</dimen>
+    <dimen name="tishi_layout_height">72dp</dimen>
+    <dimen name="message_layout_height">58dp</dimen>
+    <dimen name="top_default_height">12dp</dimen>
+
+     <!--MyFragment-->
+    <dimen name="fragment_my_portrait">60.0dip</dimen>
+    <dimen name="fragment_my_item_icon_width">23dip</dimen>
+    <!--　　我的界面/个人详情　条目的值　　　-->
+    <dimen name="relative_layout_height">52dp</dimen>
+    <dimen name="top_bar_icon_vertical_padding">8dp</dimen>
+    <dimen name="top_title_size">18sp</dimen>
+    <dimen name="top_bar_btn_minWidth">56dp</dimen>
+    <dimen name="bottom_bar_default_height">50dp</dimen>
+    <dimen name="message_item_popup_width_double_short">140dp</dimen>
+    <dimen name="message_item_popup_width_double_long">150dp</dimen>
+    <dimen name="message_item_popup_width_single_short">60dp</dimen>
+    <dimen name="message_item_popup_width_single_long">90dp</dimen>
+    <dimen name="message_item_popup_height">50dp</dimen>
+    <dimen name="top_bar_btn_right_margin">12dp</dimen>
+
+    <!-- font size 36 32 28 24 22(px)    -->
+     <dimen name="text_size_level_5">18sp</dimen>
+     <dimen name="text_size_level_4">16sp</dimen>
+     <dimen name="text_size_level_3">14sp</dimen>
+     <dimen name="text_size_level_2">12sp</dimen>
+     <dimen name="text_size_level_1">11sp</dimen>
+    <dimen name="text_size_tiny_1">7sp</dimen>
+
+    <dimen name="grid_item_text">13sp</dimen>
+
+    <dimen name="album_list_item_name_size">15sp</dimen>
+    <dimen name="album_top_cancel_size">14sp</dimen>
+    <dimen name="base_fragment_top_left_text_size">15dp</dimen>
+
+   <dimen name="list_dialog_item_height">45dp</dimen>
+    <dimen name="list_dialog_item_margin_left">10dp</dimen>
+
+    <dimen name="popmenu_width">145.0dip</dimen>
+    <dimen name="popmenu_yoff">15.0dip</dimen>
+    <dimen name="popmenu_height">275.0dip</dimen>
+    <dimen name="delete_action_len">90dip</dimen>
+
+
+
+    <dimen name="nick_max_width">230.0dip</dimen>
+
+    <dimen name="add_friends_check_width">24.0dip</dimen>
+    <dimen name="add_friends_check_height">24.0dip</dimen>
+
+    <dimen name="warning_hint_height">45.0dip</dimen>
+    <dimen name="calendar_day_height">48.0dip</dimen>
+
+
+    <dimen name="entry_interval">12dp</dimen>
+
+
+    <!--   灰色的线的高度　１dp/0.5dp -->
+    <dimen name="default_line_height">0.5dp</dimen>
+
+    <!--   灰色的线的宽度　１dp/0.5dp -->
+    <dimen name="default_line_width">0.5dp</dimen>
+
+
+    <!--   消息pop的距离左/右边的距离　１dp/0.5dp -->
+    <dimen name="message_pop_left">0.5dp</dimen>
+
+
+    <!--   位友列表条目高度 -->
+    <dimen name="wei_list_height">70dp</dimen>
+
+    <!--   位友列表头像大小 -->
+    <dimen name="wei_list_head">55dp</dimen>
+
+    <!-- 位友列表字体大小 -->
+    <dimen name="wei_list_typeface">14sp</dimen>
+
+    <!--   设备列表头像大小 -->
+    <dimen name="dev_list_head">45dp</dimen>
+
+
+    <!--   两个设置选项的间距　12dp -->
+    <dimen name="default_spacing_height">12dp</dimen>
+
+    <!--   设备设置间距　26dp -->
+    <dimen name="dev_info_setting_height">26dp</dimen>
+    <!--   设备设置间距　26dp -->
+    <dimen name="dev_history_postion_height">105dp</dimen>
+
+    <dimen name="chat_portrait_height">45dp</dimen>
+
+
+    <!--运动计步值-->
+    <dimen name="step_week_size">15sp</dimen>
+    <dimen name="step_data_size">16sp</dimen>
+    <dimen name="step_item_left">18dp</dimen>
+
+    <dimen name="step_record_title">15sp</dimen>
+    <dimen name="step_text_title">24sp</dimen>
+    <dimen name="step_item_height">95dp</dimen>
+
+    <!--font_size-->
+    <dimen name="grid_item_top">32.5dp</dimen>
+
+    <!--ToolBarView-->
+    <dimen name="toolbarview_title_size">18sp</dimen>
+    <dimen name="toolbarview_text_size">16sp</dimen>
+    <dimen name="toolbarview_height">45dp</dimen>
+    <dimen name="toolbarview_button_max_width">45dp</dimen>
+    <dimen name="toolbarview_padding">10dp</dimen>
+    <dimen name="toolbarview_button_width">25dp</dimen>
+    <dimen name="toolbarview_button_height">25dp</dimen>
+</resources>

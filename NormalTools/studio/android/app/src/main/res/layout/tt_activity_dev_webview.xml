@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MergeRootFrame" >
+
+
+
+    <com.fise.xiaoyu.ui.widget.ProgressWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.fise.xiaoyu.ui.widget.ProgressWebView>
+
+     <RelativeLayout
+         android:id="@+id/loading_fail_layout"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="#F3F3F3"
+         android:visibility="gone">
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/webview_no_net"/>
+
+         <FrameLayout
+             android:id="@+id/top_color"
+             android:layout_width="fill_parent"
+             android:layout_height="@dimen/top_bar_default_height"
+             android:background="@color/default_top_color" >
+
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center"
+                 android:textColor="@color/default_zhongjian_black"
+                 android:textSize="18sp" />
+
+             <ImageView
+                 android:id="@+id/left_btn_tt"
+                 android:layout_width="18dp"
+                 android:layout_height="18dp"
+                 android:layout_gravity="center_vertical"
+                 android:background="@drawable/icon_arrow_friends_info"
+                 android:layout_marginLeft="12dp"
+                 android:scaleType="center" />
+
+             <TextView
+                 android:id="@+id/left_txt_tt"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginLeft="32dp"
+                 android:text="@string/regist_black"
+                 android:textColor="@color/default_bar_black"
+                 android:textSize="17sp" />
+
+
+         </FrameLayout>
+
+
+     </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/progress_loading_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_loading_progress_round1"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar_loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:progressDrawable="@drawable/progress" />
+    />
+
+</RelativeLayout>

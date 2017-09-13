@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_layout_color"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tt_new_msg_tip"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@drawable/tt_new_msg_bk"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:text="新消息"
+            android:textColor="#01aff4"
+            android:visibility="gone" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:clipToPadding="false"
+            android:divider="@null"
+            android:listSelector="@null"
+            android:paddingBottom="1dp"
+            android:transcriptMode="normal"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrOverScroll="false" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/tt_layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <RelativeLayout
+            android:id="@+id/pannel_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tt_pannel_bk"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="7dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <com.fise.xiaoyu.ui.widget.CustomEditView
+                android:id="@+id/message_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/show_add_photo_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/tt_message_text_bg"
+                android:maxLines="4"
+                android:minHeight="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="0dp"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/voice_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/icon_video" />
+
+            <ImageView
+                android:id="@+id/show_keyboard_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_keyboard"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/show_add_photo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/icon_add_friends" />
+
+            <ImageView
+                android:id="@+id/show_emo_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="52dp"
+                android:background="@drawable/icon_expression"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/send_message_btn"
+                android:layout_width="46dp"
+                android:layout_height="31dp"
+                android:layout_alignBottom="@id/voice_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/button_send"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/record_voice_btn"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_alignBottom="@id/message_text"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@id/show_emo_btn"
+                android:layout_toRightOf="@id/show_keyboard_btn"
+                android:background="@drawable/tt_panel_voice_forward"
+                android:gravity="center"
+                android:text="@string/tip_for_voice_forward"
+                android:textColor="@color/default_light_black_color"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/emo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pannel_container"
+            android:background="@color/emo_bk_color"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_line_height"
+                android:layout_weight="0"
+                android:background="@color/default_line_color" />
+
+            <com.fise.xiaoyu.ui.widget.EmoGridView
+                android:id="@+id/emo_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+
+            <com.fise.xiaoyu.ui.widget.YayaEmoGridView
+                android:id="@+id/yaya_emo_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:visibility="gone" />
+
+
+            <RadioGroup
+                android:id="@+id/emo_tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:background="@color/group_manager_user_title"
+                android:checkedButton="@+id/tab1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- 第一个标签，注意button属性设置成null，以此去掉自带的radio button -->
+                <!-- 注意：id="@id/tab1"，为什么不是+id呢？这个和加载先后有关系,Google一下吧 -->
+
+                <RadioButton
+                    android:id="@id/tab1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tab_bg_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:tag="tab1"
+                    android:text="@string/yaya_emo"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tab2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/tab_bg_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/default_emo"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/add_others_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/emo_bk_color"
+                android:orientation="vertical"
+                android:layout_below="@id/pannel_container"
+                android:visibility="gone"
+               >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/default_line_height"
+                    android:background="@color/default_line_color" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <LinearLayout
+                    android:id="@+id/bottom_dots"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:layout_gravity="bottom"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dip"
+                        android:orientation="horizontal" >
+
+
+                        <View
+                            android:id="@+id/dot_1"
+                            android:layout_width="10dip"
+                            android:layout_height="10dip"
+                            android:layout_marginLeft="2dip"
+                            android:layout_marginRight="2dip"
+                            android:background="@drawable/point_normal" />
+
+                        <View
+                            android:id="@+id/dot_2"
+                            android:layout_width="10dip"
+                            android:layout_height="10dip"
+                            android:layout_marginLeft="2dip"
+                            android:layout_marginRight="2dip"
+                            android:background="@drawable/point_normal" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
