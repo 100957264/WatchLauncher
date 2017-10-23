@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="test_title_color">#ffff0000</color>
+    <color name="fail_text_color">#ffff0000</color>
+    <color name="pass_text_color">#ff00ff00</color>
+    <color name="not_test_text_color">#ffe1bf00</color>
+    <color name="test_time_color">#ff00ff00</color>
+    
+</resources>

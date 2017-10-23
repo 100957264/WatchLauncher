@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/reboot_container"
+            android:layout_width="@dimen/set_time_container_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/report_container_margin_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/time_text_size"
+                android:text="@string/reboot_title" />
+
+            <EditText
+                android:id="@+id/reboot_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="numberSigned"
+                android:nextFocusForward="@+id/sleep_time"
+                android:hint="@integer/default_reboot_time"
+                android:textSize="@dimen/time_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sleep_container"
+            android:layout_width="@dimen/set_time_container_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/report_container_margin_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/time_text_size"
+                android:text="@string/sleep_title" />
+
+            <EditText
+                android:id="@+id/sleep_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="numberSigned"
+                android:nextFocusForward="@+id/vibrate_time"
+                android:hint="@integer/default_sleep_time"
+                android:textSize="@dimen/time_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vibrate_container"
+            android:layout_width="@dimen/set_time_container_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/report_container_margin_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/time_text_size"
+                android:text="@string/vibrate_title" />
+
+            <EditText
+                android:id="@+id/vibrate_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="numberSigned"
+                android:nextFocusForward="@+id/receiver_time"
+                android:hint="@integer/default_vibrate_time"
+                android:textSize="@dimen/time_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/receiver_container"
+            android:layout_width="@dimen/set_time_container_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/report_container_margin_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/time_text_size"
+                android:text="@string/receiver_title" />
+
+            <EditText
+                android:id="@+id/receiver_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="numberSigned"
+                android:nextFocusForward="@+id/taking_picture_time"
+                android:hint="@integer/default_receiver_time"
+                android:textSize="@dimen/time_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/front_taking_picture_container"
+            android:layout_width="@dimen/set_time_container_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/report_container_margin_top"
+			android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/time_text_size"
+                android:text="@string/front_taking_picture_title" />
+
+            <EditText
+                android:id="@+id/front_taking_picture_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="numberSigned"
+                android:nextFocusForward="@+id/back_taking_picture_time"
+                android:hint="@integer/default_front_taking_picture_time"
+                android:textSize="@dimen/time_text_size" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/back_taking_picture_container"
+            android:layout_width="@dimen/set_time_container_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/report_container_margin_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/time_text_size"
+                android:text="@string/back_taking_picture_title" />
+
+            <EditText
+                android:id="@+id/back_taking_picture_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="numberSigned"
+                android:nextFocusForward="@+id/play_video_time"
+                android:hint="@integer/default_back_taking_picture_time"
+                android:textSize="@dimen/time_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/play_video_container"
+            android:layout_width="@dimen/set_time_container_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/report_container_margin_top"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/time_text_size"
+                android:text="@string/play_video_title" />
+
+            <EditText
+                android:id="@+id/play_video_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="numberSigned"
+                android:nextFocusForward="@+id/ok"
+                android:hint="@integer/default_play_video_time"
+                android:textSize="@dimen/time_text_size" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+        
+        <Button 
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/button_padding_top"
+            android:paddingBottom="@dimen/button_padding_bottom"
+            android:text="@string/ok"/>
+        
+        <Button 
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/button_padding_top"
+            android:paddingBottom="@dimen/button_padding_bottom"
+            android:layout_marginLeft="@dimen/button_margin_left"
+            android:text="@string/cancel"/>
+    </LinearLayout>
+
+</LinearLayout>
