@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.fengqing.com.waterwatchsystem.acty.WaterWatchMainActivity"
+    >
+    <include
+        android:id="@+id/video_web_section"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        layout="@layout/video_fragment"
+        android:layout_above="@+id/ff_bottom_section"
+        android:layout_toStartOf="@+id/ff_section" />
+    <include
+        android:id="@+id/ff_section"
+        android:layout_height="wrap_content"
+        android:layout_width="64dp"
+        android:layout_alignParentRight="true"
+        layout="@layout/function_fragment"/>
+    <include
+        android:id="@+id/ff_bottom_section"
+        android:layout_height="64dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_fragment"/>
+
+</android.support.percent.PercentRelativeLayout>
